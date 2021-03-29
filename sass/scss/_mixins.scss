@@ -1,0 +1,11 @@
+@mixin border {
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+@mixin border2 {
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 50px;
+}
