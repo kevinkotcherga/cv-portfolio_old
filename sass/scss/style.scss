@@ -104,70 +104,46 @@ a:link {
     color: $hover-color;
   }
   .button1:after {    
-    content:'';
-    background: $hover-color;
-    height: 0.8px;
-    display: block;
-    position: absolute;
+    @include button;
+    @include transition;
     bottom: 0px;
     left: 0px;
     width: 0px;
-	  transition:0.3s ease;
   }
   .button5:after {
-    content:'';
-    background: $hover-color;
-    height: 0.8px;
-    display: block;
-    position: absolute;
+    @include button;
+    @include transition;
     bottom: 0px;
     right: 0px;
     width: 0px;
-	 transition:0.3s ease;
   }
   .button3:after{
-    content:'';
-    background: $hover-color;
-    height: 0.8px;
-    display: block;
-    position: absolute;
+    @include button;
+    @include transition;
     top: 0px;
     right: 0px;
     width: 0px;
-	  transition:0.3s ease;
   }
   .button3:before{
-    content:'';
-    background: $hover-color;
-    height: 0.8px;
-    display: block;
-    position: absolute;
+    @include button;
+    @include transition;
     bottom: 0px;
     left: 0px;
     width: 0px;
-    transition:0.3s ease;
   }
   .button4:after{
-	  content:'';
-    background: $hover-color;
-    height: 0.8px;
-    display: block;
-    position: absolute;
+	  @include button;
+    @include transition;
     top: 0px;
     left: 0px;
     width: 0px;
-	  transition:0.3s ease;
   }
   .button2:after {
-    content:'';
-    background: $hover-color;
-    height: 0.8px;
-    display: block;
-    position: absolute;
+    @include button;
+    @include transition;
     top: 0px;
     right: 0px;
     width: 0px;
-	  transition:0.3s ease;
   }
 }
   .button1:hover:after,.button2:hover:after,.button4:hover:after,.button5:hover:after {
@@ -222,19 +198,18 @@ a:link {
   }
 }
 
-.section-index__menu-item-img {
+.section-index__menu-item_img {
 	pointer-events: none;
 	position: absolute;
-	height: 310px;
-  width: 310px;
-	max-height: 350px;
+	height: 370px;
+  width: 380px;
 	opacity: 0;
 	left: 100%;
 	top: 50%;
 	transform: translate3d(calc(-100% - 5rem),-30%,0) translate3d(0,20px,0);
 }
 
-.section-index__menu-item-link:hover + .section-index__menu-item-img {
+.section-index__menu-item-link:hover + .section-index__menu-item_img {
 	opacity: 1;
 	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
 	transition: all 0.4s;
@@ -247,7 +222,7 @@ a:link {
 	width: var(--marquee-width);
 	overflow: hidden;
 	pointer-events: none;
-  mix-blend-mode: color- burn;
+  mix-blend-mode: exclusion;
   color: #000;
   span {
     font-style: italic;
@@ -391,7 +366,7 @@ a:link {
     -webkit-text-stroke: 1.1px #000;
     color: transparent;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   h2 {
     color: $hover-color;
@@ -417,13 +392,12 @@ a:link {
     margin-bottom: 5px;
   }
   .sass {
-    height: 150px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
   .git {
     height: 80px;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   .bootstrap {
     height: 110px;
@@ -432,7 +406,7 @@ a:link {
     margin-bottom: 20px;
   }
   .visual {
-    height: 110px;
+    height: 112px;
     width: 130px;
     margin-top: 25px;
     margin-bottom: 18px;
@@ -440,10 +414,15 @@ a:link {
   .responsive {
     height: 105px;
     margin-top: 30px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
   .css3 {
     margin-bottom: 5px;
+  }
+  .php {
+    height: 130px;
+    width: 130px;
+    margin: 10px 0 15px 0;
   }
   p {
     display: flex;
@@ -615,6 +594,7 @@ fieldset {
 // Media Query 
 
 @media screen and (max-width: 1390px) {
+
 .header {
   margin: 0;
   padding: 0;
@@ -626,32 +606,28 @@ fieldset {
     margin: 10px 10px 0 10px;
     padding: 0;
   }
-  }
 }
 
-@media screen and (max-width: 1290px) {
 .section-competences__bloc-competences {
   display: flex;
   flex-wrap: wrap;
   }
-  .section-experiences {
-    flex-direction: column;
+
+.section-experiences {
+  flex-direction: column;
   .section-experiences__experiences-pro {
     margin: 0 40px 100px 40px;
   }
-  .section-experiences__diplomes {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+    .section-experiences__diplomes {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
 }
 
 .section-logo-contact {
   margin: 0 150px 0 150px;
 }
-}
 
-
-@media screen and (max-width: 1100px) {
 .footer {
   flex-direction: column;
   margin: 100px 20px 50px 20px;
@@ -661,27 +637,24 @@ fieldset {
     margin: 0 0 10px 0;
   }
 }
-    
+      
 .section-profil {
   margin: 100px 50px 0 50px;
+  .section-profil__footer {
+    flex-direction: column;
+    .section-profil__footer-informations, .section-profil__footer-interets {
+      margin: auto;
+    }
+  }
 }
-
+  
 .section-logo-contact {
   display: flex;
   flex-wrap: wrap;
-}
+  }
 }
 
 @media screen and (max-width: 900px) {
-.section-profil__footer {
-  flex-direction: column;
-  .section-profil__footer-informations {
-    margin: auto;
-  }
-  .section-profil__footer-interets {
-    margin-left: 100px;
-  }
-}
 
 .section-experiences {
   margin: 100px 20px 200px 20px;
@@ -697,20 +670,7 @@ fieldset {
 }
 
 @media screen and (max-width: 770px) {
-.section-profil {
-  h2, h3 {
-    margin: 14px 0 14px 0;
-  }
-  .section-profil__presentation {
-    margin: 16px 0 60px 0;
-  }
-  .section-profil__metier {
-    margin: 16px 0 40px 0;
-  }
-}
-}
 
-@media screen and (max-width: 750px) {
 .header__titre-principale {
   display: flex;
   flex-direction: column;
@@ -719,30 +679,40 @@ fieldset {
     margin : 10px 20px 15px 20px;
   }
   .header__titre-principale-nom {
-  margin: auto;
+    margin: auto;
   }
 }
+
 .section-experiences {
-  margin: 100px 5px 200px 5px;
+  margin: 70px 0 200px 0;
+  .section-experiences__experiences-pro {
+    margin: 0 20px 40px 20px;
+  }
+    .section-experiences__diplomes {
+      margin: 0 20px 0 20px;
+    }
 }
-  
+    
 .section-contact__container-formulaire {
   margin: 0 20px 50px 20px;
 }
-
-.section-logo-contact {
-  margin: 0 50px 0 50px;
-}
-}
-
-@media screen and (max-width: 620px) {
-.nav { 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-} 
   
+.section-logo-contact {
+  margin: 0 20px 0 20px;
+}
+ 
+.section-profil {
+  h2, h3 {
+    margin: 14px 0 14px 0;
+  }
+  .section-profil__presentation {
+    margin: 16px 0 60px 0;
+  }
+    .section-profil__metier {
+      margin: 16px 0 40px 0;
+    }
+}
+
 .section-profil__footer {
   .section-profil__footer-interets {
     margin: auto;
@@ -752,22 +722,16 @@ fieldset {
   }
 }
 
-.section-experiences {
-  margin: 70px 0 200px 0;
-  .section-experiences__experiences-pro {
-    margin: 0 20px 40px 20px;
-  }
-  .section-experiences__diplomes {
-    margin: 0 20px 0 20px;
-  }
-}
-
-.section-logo-contact {
-  margin: 0 20px 0 20px;
-}
+.nav { 
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  } 
 }
 
 @media screen and (max-width: 480px) {
+
 .header {
   margin: 0;
   justify-content: center;
@@ -782,7 +746,13 @@ fieldset {
 }
 
 .section-profil {
-  margin: 100px 20px 0 20px;
+  margin: 100px 0px 0 0px;
+  .qui-suis-je, .pourquoi-dev {
+    text-align: justify;
+  }
+  .section-profil__footer-interets {
+    padding: 0 30px 0 30px;
+  }
 }
 
 .section-competences {
@@ -797,4 +767,16 @@ fieldset {
     padding: 10px;
   }
 }
+
+.infos {
+  flex-direction: column;
+  img {
+    margin-top: 10px;
+  }
+}
+
+.qui-suis-je {
+  text-align: justify;
+}
+
 }

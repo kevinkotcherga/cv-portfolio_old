@@ -9,3 +9,15 @@
   background-color: transparent;
   border-radius: 50px;
 }
+
+@mixin button {
+  content:'';
+  background: $hover-color;
+  height: 0.8px;
+  display: block;
+  position: absolute;
+}
+
+@mixin transition {
+  transition:0.3s ease;
+}
