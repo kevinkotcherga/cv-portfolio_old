@@ -19,7 +19,7 @@
         
       <nav class="nav">
         <ul class="nav__ul">
-          <li><a class="button1" href="index.php">Accueil</a></li>
+          <li><a class="button1" href="/">Accueil</a></li>
           <li><a class="button2" href="views/profil.php">À propos de moi</a></li>
           <li><a class="button3" href="views/competences.php">Compétences</a></li>
           <li><a class="button4" href="views/experiences.php">Expériences</a></li>
@@ -85,7 +85,7 @@
     </section>
 
       <footer class="footer">
-        <p>Télécharger mon cv <a href="docs/cvkotchergakevin.pdf">ici</a><span>Visiter mon <a href="https://github.com/kevinkotcherga/cv-portfolio">github</a></span></p>
+        <p>Télécharger mon cv <a href="docs/kotchergakevincv.pdf">ici</a><span>Visiter mon <a href="https://github.com/kevinkotcherga/cv-portfolio">github</a></span></p>
         <p class="infos"><a href="docs/ecoindex.csv"><img src="images/personalisé/planet-earth.png" title="GreenIT EcoIndex: 89 Note: A" alt=""></a>©2021 Développer par Kevin <a class="kotcherga" href="https://www.linkedin.com/in/kevin-kotcherga-68b17520a/">Kotcherga</a></p>
       </footer>
 

@@ -8,7 +8,7 @@
 
         <nav class="nav">
       <ul class="nav__ul">
-        <li><a class="button1" href="../index.php">Accueil</a></li>
+        <li><a class="button1" href="../">Accueil</a></li>
         <li><a class="button2" href="../views/profil.php">À propos de moi</a></li>
         <li><a class="button3" href="../views/competences.php">Compétences</a></li>
         <li><a class="button4" href="../views/experiences.php">Expériences</a></li>
