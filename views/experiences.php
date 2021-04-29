@@ -46,12 +46,28 @@
                 <h3>LLAMA - (01/09/16 - 01/09/18)</h3>
                 <p>Mixage (réglage de niveau, égalisation, compression, réverbérations,etc..) et Mastering (Élargissement stéréo, corrections de fréquences, ajustement au niveau standard de l'industrie, etc..)</p>
               </div></li>
+
+              <li><div>
+                <h2>Réceptionniste d'hôtel - Serveur en restauration :</h2>
+                <h3>Restaurant Le Saint-Nicolas - Hôtel Le Cetus - (01/09/14 - 31/08/16)</h3>
+                <p>Mise en place, accueil, prise de commandes et services, relation avec la clientèle, barman, enregistrement des arrivées et départs des clients, gérer le planning des réservations</p>
+              </div></li>
             </ul>
         </div>
         
         <div class="section-experiences__diplomes">
           <h1>Diplômes :</h1>
             <ul>
+
+            <li><div>
+                <h2>Apprenez à programmer avec JavaScript (en cours d'apprentissage) :</h2>
+                  <p>OpenClassrooms - 2021</p>
+              </div></li>
+
+            <li><div>
+                <h2>Découvrez le fonctionnement des algorithmes :</h2>
+                  <p>OpenClassrooms - 2021</p>
+              </div></li>
 
               <li><div>
                 <h2>Concevez votre site web avec PHP et MySQL :</h2>

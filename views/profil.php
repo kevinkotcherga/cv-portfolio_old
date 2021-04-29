@@ -20,7 +20,7 @@
         </div>
         <div class="pourquoi-dev">
         <h3>Pourquoi le développement web ?</h3>
-          <p>Je suis actuellement en apprentissage et j'aime ce que j'étudie, j'ai pu apercevoir les différents languages qu'il me restait à connaître et j'ai trouvé ça passionnant de découvrir toutes les possibilités qu'il m'était encore possible d'assimiler. Le métier de développeur web et en perpétuelle évolution, le besoin de formation est donc constant et c'est ce qui me plaît, on s'ennuie rarement. J'ai pu être confronté à différents problèmes mais ça a toujours été un plaisir d'en trouver les solutions. Je passe la majorité de mon temps libre à apprendre et je ne m'en lasse pas. J'apprécie les nouvelles technologies et être au courant de ce qui se fait. Je pense que le développement web est un métier d'avenir et j'aimerai en avoir la maîtrise. </p>
+          <p>Je suis actuellement en apprentissage et j'aime ce que j'étudie, j'ai pu apercevoir les différents langages qu'il me restait à connaître et j'ai trouvé ça passionnant de découvrir toutes les possibilités qu'il m'était encore possible d'assimiler. Le métier de développeur web et en perpétuelle évolution, le besoin de formation est donc constant et c'est ce qui me plaît, on s'ennuie rarement. J'ai pu être confronté à différents problèmes mais ça a toujours été un plaisir d'en trouver les solutions. Je passe la majorité de mon temps libre à apprendre et je ne m'en lasse pas. J'apprécie les nouvelles technologies et être au courant de ce qui se fait. Je pense que le développement web est un métier d'avenir et j'aimerai en avoir la maîtrise. </p>
         </div>
           <div class="section-profil__footer">
             <div class="section-profil__footer-informations">

@@ -15,7 +15,7 @@
     <section class="section-contact">
       <h1>Contact</h1>
         <div class="section-contact__container">  
-          <form class="section-contact__container-formulaire" action="../php/cible.php" method="post">
+          <form class="section-contact__container-formulaire" action="../php/sendEmail.php" method="post">
             <h3>Merci de prendre le temps de me contacter</h3>
             <h4>Laissez moi un message et j'y répondrai le plus rapidement possible :</h4>
               <fieldset>
@@ -25,10 +25,10 @@
                 <input class="section-contact__container-formulaire-email" name='email' placeholder="Email" type="email" tabindex="2" required>
               </fieldset>
               <fieldset>
-                <textarea name='message' placeholder="Php en cours d'apprentisage, envoie de formulaire disponible prochainement." tabindex="3" required></textarea>
+                <textarea class="section-contact__container-formulaire-message" name='message' placeholder="Php en cours d'apprentisage, envoie de formulaire disponible prochainement." tabindex="3" required></textarea>
               </fieldset>
               <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer votre message</button>
+                <button id="contact-submit" name="submit" type="submit" data-submit="...Sending">Envoyer votre message</button>
               </fieldset>
           </form>
          </div>
