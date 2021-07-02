@@ -17,17 +17,18 @@
         </header>
 
         <section class="section-principale">
-          <h1>La carte pour payer en tois fois sans frais</h1>
-
-            <div>
+          <div class="bloc-h1">
+          <h1>La carte pour payer en trois fois sans frais</h1>
+          </div>
+            <div class="bloc-p">
               <p>Le futur c'est maintenant. Gérez vos finances et vos crédits de manière transparente et simple avec UNI.</p>
               <img src="../images/image-projet2/bar.png">
             </div>
 
             <nav>
               <ul>
-                <li>Utiliser maintenant</li>
-                <li>En savoir plus</li>
+                <li class="button-utiliser" ><a class="button-utiliser__color" href=""> Utiliser maintenant <img class="fleche" src="../images/fleche-droite.png" </a></li>
+                <li class="button-savoir" ><a href="">En savoir plus</a></li>
               </ul>
             </nav>
         </section>

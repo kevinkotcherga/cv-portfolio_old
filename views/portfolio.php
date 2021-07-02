@@ -16,7 +16,7 @@
       <h1>Portfolio</h1> 
         <div class="section-portfolio__img-projets">
           <a href="../projet1/indexprojet1.php"><img class="lien-projet1" src="../images/projet1.png"></a>
-          <a href="../projet2/indexprojet2.php"><img class="lien-projet1" src="../images/projet1.png"></a>
+          <a href="../projet2/indexprojet2.php"><img class="lien-projet1" src="../images/projet2.png"></a>
         </div>
     </section>
 

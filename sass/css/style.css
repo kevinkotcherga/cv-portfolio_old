@@ -740,6 +740,11 @@ fieldset {
     flex-wrap: wrap;
   }
 }
+.section-portfolio__img-projets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 900px) {
   .section-experiences {
     margin: 100px 20px 200px 20px;

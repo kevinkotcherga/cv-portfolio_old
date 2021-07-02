@@ -726,6 +726,11 @@ fieldset {
   }
 }
 
+.section-portfolio__img-projets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 900px) {
 
 .section-experiences {
