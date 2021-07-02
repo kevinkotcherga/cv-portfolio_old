@@ -21,6 +21,7 @@
             <p><img class="css3" src="../images/css3-black.png" alt="">Css 3</p>
             <p><img class="php" src="../images/php.png" alt="">Php</p>
             <p><img class="visual" src="../images/visual_studio.png" alt="">Visual Studio Code</p>
+            <p><img class="javascript" src="../images/javascript.png" alt="">JavaScript</p>
             <p><img class="sass" src="../images/sass-white.png" alt="">Sass & BEM</p>
             <p><img class="responsive" src="../images/multiscreen.png" alt="">Responsive Design</p>
             <p><img class="git" src="../images/Git-Logo-Black.png" alt="">Git & GitHub</p>  

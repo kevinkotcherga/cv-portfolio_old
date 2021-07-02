@@ -12,7 +12,8 @@
         <li><a class="button2" href="../views/profil.php">À propos de moi</a></li>
         <li><a class="button3" href="../views/competences.php">Compétences</a></li>
         <li><a class="button4" href="../views/experiences.php">Expériences</a></li>
-        <li><a class="button5" href="../views/contact.php">Contact</a></li>
+        <li><a class="button5" href="../views/portfolio.php">Portfolio</a></li>
+        <li><a class="button6" href="../views/contact.php">Contact</a></li>
       </ul>
   </nav>
 </header>

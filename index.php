@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta name="google-site-verification" content="0sTjmez1Jzz9dwfqaIUV8yfF1sQ9XVlHs9RngcXNSuo" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sass/css/style.css"/>
@@ -23,7 +24,9 @@
           <li><a class="button2" href="views/profil.php">À propos de moi</a></li>
           <li><a class="button3" href="views/competences.php">Compétences</a></li>
           <li><a class="button4" href="views/experiences.php">Expériences</a></li>
-          <li><a class="button5" href="views/contact.php">Contact</a></li>
+          <li><a class="button5" href="views/portfolio.php">Portfolio</a></li>
+          <li><a class="button6" href="views/contact.php">Contact</a></li>
+          
         </ul>
       </nav>    
     </header>
@@ -32,7 +35,7 @@
       <nav class="section-index__menu">
         <div class="section-index__menu-item">
           <a href="views/profil.php"class="section-index__menu-item-link">À propos de moi</a>
-          <img class="section-index__menu-item_img" src="images/personalisé/kevin-cadre.png" alt="Some image"/>
+          <img class="section-index__menu-item_img" src="images/personalisé/013-brief.png" alt="Some image"/>
           <div class="marquee">
             <div class="marquee__inner">
               <span>À propos de moi</span>
@@ -45,7 +48,7 @@
 
         <div class="section-index__menu-item">
           <a href="views/competences.php" class="section-index__menu-item-link">Compétences</a>
-            <img class="section-index__menu-item_img" src="images/personalisé/competences.png" alt="Some image"/>
+            <img class="section-index__menu-item_img" src="images/personalisé/commencez.png" alt="Some image"/>
               <div class="marquee">
                 <div class="marquee__inner">
                   <span>Compétences</span>
@@ -58,7 +61,7 @@
 
         <div class="section-index__menu-item">
           <a href="views/experiences.php" class="section-index__menu-item-link">Expériences</a>
-            <img class="section-index__menu-item_img" src="images/personalisé/experiences.png" alt="Some image"/>
+            <img class="section-index__menu-item_img" src="images/personalisé/croissance.png" alt="Some image"/>
               <div class="marquee">
                 <div class="marquee__inner">
                   <span>Expériences</span>
@@ -70,8 +73,21 @@
         </div>
 
         <div class="section-index__menu-item">
+          <a href="views/portfolio.php" class="section-index__menu-item-link">Portfolio</a>
+            <img class="section-index__menu-item_img" src="images/personalisé/storyboard.png" alt="Some image"/>
+              <div class="marquee">
+                <div class="marquee__inner">
+                  <span>Portfolio</span>
+                  <span>Portfolio</span>
+                  <span>Portfolio</span>
+                  <span>Portfolio</span>
+                </div>
+              </div>
+        </div>
+
+        <div class="section-index__menu-item">
           <a href="views/contact.php" class="section-index__menu-item-link">Contact</a>
-            <img class="section-index__menu-item_img" src="images/personalisé/contact.png" alt="Some image"/>
+            <img class="section-index__menu-item_img" src="images/personalisé/filaire.png" alt="Some image"/>
               <div class="marquee">
                 <div class="marquee__inner">
                   <span>Contact</span>

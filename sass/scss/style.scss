@@ -5,17 +5,20 @@
 @import "button.scss";
 
 @font-face {
-  font-family: 'sofiapro-light';
-  src: url('../../police/sofiapro-light-webfont.woff2') format('woff2'),
-       url('../../police/sofiapro-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Fire";
+    src : url('../../police/OpenSans-Regular.ttf');
 }
 
-$hover-color:#EFFEC4;
+@font-face {
+  font-family: "Poppin";
+    src : url('../../police/Poppins-Regular.otf');
+}
+
+$hover-color: #FFF7D3;
 $background : #D3E2FA;
 $color1: black;
-
+$font: "Fire";
+$size-font: 1.1rem;
 
 
 // Page 1 - Accueil 
@@ -25,12 +28,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: sofia-pro, sans-serif;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 
   &::before {
     animation: grain 8s steps(10) infinite;
-    background-image: url(../../images/noise.png);
+    background-image: url(../../images/nois.png);
     content: '';
     height: 300%;
     left: -50%;
@@ -60,7 +62,7 @@ a:link {
 
 .header {
   color: $color1;
-  font-family: 'sofiapro-light';
+  font-family: $font;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
@@ -76,16 +78,18 @@ a:link {
 }
   h1 {
     margin-right: 12px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 10px;
   }
   span {
+    font-size: $size-font;
     margin-right: 12px;
   }
   p {
     margin-right: 10px;
   }
   .nav__ul {
+    font-size: $size-font;
     margin-right: 50px;
     margin-left: 50px;
     user-select: none;
@@ -201,17 +205,17 @@ a:link {
 .section-index__menu-item_img {
 	pointer-events: none;
 	position: absolute;
-	height: 370px;
-  width: 380px;
+	height: 400px;
+  width: 400px;
 	opacity: 0;
 	left: 100%;
 	top: 50%;
-	transform: translate3d(calc(-100% - 5rem),-30%,0) translate3d(0,20px,0);
+	transform: translate3d(calc(-100% - 5rem),-50%,0) translate3d(0,20px,0);
 }
 
 .section-index__menu-item-link:hover + .section-index__menu-item_img {
 	opacity: 1;
-	transform: translate3d(calc(-100% - 6vw),-30%,0) rotate3d(0,0,1,4deg);
+	transform: translate3d(calc(-90% - 6vw),-40%,0) rotate3d(0,0,1,4deg);
 	transition: all 0.4s;
 }
 
@@ -222,10 +226,10 @@ a:link {
 	width: var(--marquee-width);
 	overflow: hidden;
 	pointer-events: none;
-  mix-blend-mode: exclusion;
-  color: #000;
+  mix-blend-mode: screen;
+  color: $hover-color;
   span {
-    font-style: italic;
+    font-style: normal;
     font-family: sans-serif; 
   }
 }
@@ -235,7 +239,7 @@ a:link {
 	display: flex;
 	position: relative;
 	transform: translate3d(var(--move-initial), 0, 0);
-	animation: marquee 5s linear infinite;
+	animation: marquee 25s linear infinite;
 	animation-play-state: paused;
 	opacity: 0;
 	transition: opacity 0.1s;
@@ -271,8 +275,8 @@ a:link {
   align-items: center;
   margin: 100px 100px 50px 100px;
   position: relative;
-  font-size: 1.1rem;
-  font-family: 'sofiapro-light';
+  font-size: 1.2rem;
+  font-family: $font;
   a {
     color: $hover-color;
     font-weight: 500;
@@ -298,20 +302,22 @@ a:link {
 
 .section-profil {
   position: relative;
-  font-family:'sofiapro-light';
+  font-family: $font;
   margin-left: 150px;
   margin-right: 150px;
-  margin-top: 100px;
+  margin-top: 70px;
   h1 {
+    margin-top: 100px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5vw;
     font-family: sans-serif;
-    -webkit-text-stroke: 1.1px #000;
+    -webkit-text-stroke: 0.2vh #000;
     color: transparent;
     margin-bottom: 20px; 
   }
   p, ul {
-    font-size: 1rem;
+    font-family: "Poppin" ;
+    font-size: 0.9rem;
     
   }
   
@@ -319,26 +325,37 @@ a:link {
     color: $hover-color;
   }
 
-  h2, h3, h4, h5 {
+  h2, h4, h5 {
     font-weight: 800;
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.5rem;
+    text-align: left;
   }
+
+  h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
   .qui-suis-je {
-    margin: 0 50px 100px 50px;
-    text-align: center;
+    padding: 15px;
+    margin: 50px 50px 100px 50px;
+    text-align: left;
     h2 {
-    margin: 50px 0 30px 0;
+    margin: 0px 0 20px 0;
   }
 } 
   .pourquoi-dev {
-    text-align: center;
-    margin: 0 50px 70px 50px;
+    text-align: left;
+    margin: 0 50px 80px 50px;
     h3 {
-      margin: 50px 0 30px 0;
+      margin: 50px 0 20px 0;
     }
   }
-
+  ul {
+    margin: 0;
+    padding: 0;
+  }
   li {list-style-type: none;}
   li:before {
 	content: "◌";
@@ -349,6 +366,7 @@ a:link {
 .section-profil__footer {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 150px;
   a {
     color: $hover-color;
   }
@@ -358,19 +376,19 @@ a:link {
 
 .section-competences {
   position: relative;
-  font-family:'sofiapro-light';
+  font-family: $font;
   margin: 100px 100px 200px 100px;
   h1 {
-    font-size: 3rem;
-    font-family: sans-serif;
-    -webkit-text-stroke: 1.1px #000;
-    color: transparent;
     text-align: center;
+    font-size: 5vw;
+    font-family: sans-serif;
+    -webkit-text-stroke: 0.2vh #000;
+    color: transparent;
     margin-bottom: 50px;
   }
   h2 {
     color: $hover-color;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
@@ -385,44 +403,47 @@ a:link {
   display: flex;
   justify-content: space-around;
   img {
-    width: 150px;
-    height: 150px;
+    max-width: 100%;
+	  height: auto;
   }
   .html5 {
-    margin-bottom: 5px;
+    width: 130px;
+    margin-bottom: 22px;
   }
   .sass {
-    margin-bottom: 5px;
+    width: 130px;
+    margin-bottom: 21px;
   }
   .git {
-    height: 80px;
-    margin-top: 40px;
-    margin-bottom: 35px;
+    width: 150px;
+    margin: 30px 20px 57px 0;
   }
   .bootstrap {
-    height: 110px;
-    width: 110px;
+    width: 100px;
     margin-top: 23px;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
   .visual {
-    height: 112px;
     width: 130px;
-    margin-top: 25px;
+    margin-top: 5px;
     margin-bottom: 18px;
   }
   .responsive {
-    height: 105px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    width: 110px;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
   .css3 {
-    margin-bottom: 5px;
+    width: 130px;
+    margin-bottom: 23px;
   }
   .php {
-    height: 130px;
     width: 130px;
-    margin: 10px 0 15px 0;
+    margin: 5px 0 18px 0;
+  }
+  .javascript {
+    width: 105px;
+    margin: 10px 0 23px 0;
   }
   p {
     display: flex;
@@ -435,9 +456,10 @@ a:link {
 
 .titre_experiences {
   position: relative;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 5vw;
   font-family: sans-serif;
-  -webkit-text-stroke: 1.1px #000;
+  -webkit-text-stroke: 0.2vh #000;
   color: transparent;
   margin-top: 100px;  
   text-align: center;
@@ -447,7 +469,7 @@ a:link {
 .section-experiences {
   position: relative;
   display: flex;
-  font-family:'sofiapro-light';
+  font-family: $font;
   margin: 100px 100px 200px 100px;
   h1 {
     font-size: 1.3rem;
@@ -490,11 +512,54 @@ a:link {
   margin-left: 20px;
 }
 
-// Page 5 - Contact 
+// Page 5 - Portfolio 
+
+.section-portfolio {
+  font-family: $font;
+  position: relative;
+  h1 {
+    position: relative;
+  text-align: center;
+  font-size: 5vw;
+  font-family: sans-serif;
+  -webkit-text-stroke: 0.2vh #000;
+  color: transparent;
+  margin-top: 100px;  
+  text-align: center;
+  margin-bottom: 50px;
+  }
+  h2 {
+    color: $hover-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .section-portfolio__img-projets {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.lien-projet1{
+  margin:auto;
+  display:flex;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  width: 500px;
+  max-width: 100%;
+	height: auto;
+}
+
+.bloc-inner-spacer {
+  height: 300px;
+}
+
+// Page 6 - Contact 
 
 .section-contact {
   position: relative;
-  font-family: 'sofiapro-light';
+  font-family: $font;
   .section-contact__container {
     max-width:600px;
     width:100%;
@@ -502,9 +567,10 @@ a:link {
   }
   h1 {
   position: relative;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 5vw;
   font-family: sans-serif;
-  -webkit-text-stroke: 1.1px #000;
+  -webkit-text-stroke: 0.2vh #000;
   color: transparent;
   margin-top: 100px;
   text-align: center;
@@ -519,7 +585,7 @@ a:link {
 	margin: 50px 0px 50px 0;  
   text-align: center;
   input,textarea {
-  font-family:'sofiapro-light';
+  font-family: $font;
   }
   h3 {
     font-size: 1.3rem;
@@ -569,7 +635,7 @@ fieldset {
   margin: 0 250px 0 250px;
   justify-content: space-around;
   font-family: sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   a {
     color: black;
     display: inline-block;
@@ -590,10 +656,16 @@ fieldset {
     margin-right: 10px;
 } 
 
+// Projet 1 - Portfolio
+
+.body-projet1 {
+  position: relative;
+  background-color: white;
+}
 
 // Media Query 
 
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1470px) {
 
 .header {
   margin: 0;

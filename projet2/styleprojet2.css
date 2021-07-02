@@ -1,0 +1,31 @@
+.body-projet2 {
+  margin: 0;
+  background: linear-gradient(326deg, rgb(4, 55, 52) , rgb(1, 190, 174) 74%, rgb(103, 142, 124));
+}
+
+.button-back{
+  font-size: 1.4rem;
+  margin-left: 30px;
+}
+
+.scholarme-page {
+  font-family: "Open-Sans";
+  background-color: #FFF;
+  height: 800px;
+  width: 1200px;
+  margin: auto; 
+}
+
+.inner-spacer {
+  height: 10px;
+}
+
+.inner-spacer2 {
+  height: 50px;
+}
+
+.footer-banniere {
+  height: 380px;
+  max-height: 100%;
+  width: auto;
+}

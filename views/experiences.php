@@ -60,7 +60,7 @@
             <ul>
 
             <li><div>
-                <h2>Apprenez à programmer avec JavaScript (en cours d'apprentissage) :</h2>
+                <h2>Apprenez à programmer avec JavaScript :</h2>
                   <p>OpenClassrooms - 2021</p>
               </div></li>
 
