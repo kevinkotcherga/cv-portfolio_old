@@ -19,13 +19,7 @@
             <ul>
               <li><div>
                 <h2>Magasinier :</h2>
-                <h3>CDI - Sud-Est Traiteur (02/12/19 - 31/03/21)</h3>
-                  <p>Réception, stockage, préparation de marchandises, suivi et inventaire des stocks</p>
-              </div></li>
-
-              <li><div>
-                <h2>Magasinier :</h2>
-                <h3>Intérim - Sud-Est Traiteur (28/08/19 - 01/12/19)</h3>
+                <h3>CDI - Sud-Est Traiteur (28/08/19 - 31/03/21)</h3>
                   <p>Réception, stockage, préparation de marchandises, suivi et inventaire des stocks</p>
               </div></li>
 
@@ -58,35 +52,22 @@
         <div class="section-experiences__diplomes">
           <h1>Diplômes :</h1>
             <ul>
-
-            <li><div>
-                <h2>Apprenez à programmer avec JavaScript :</h2>
-                  <p>OpenClassrooms - 2021</p>
-              </div></li>
-
-            <li><div>
-                <h2>Découvrez le fonctionnement des algorithmes :</h2>
-                  <p>OpenClassrooms - 2021</p>
-              </div></li>
-
               <li><div>
-                <h2>Concevez votre site web avec PHP et MySQL :</h2>
-                  <p>OpenClassrooms - 2021</p>
-              </div></li>
-
-              <li><div>
-                <h2>Créez des animations CSS modernes :</h2>
-                  <p>OpenClassrooms - 2021</p>
-              </div></li>
-
-              <li><div>
-                <h2>Simplifiez-vous le CSS avec Sass :</h2>
-                  <p>OpenClassrooms - 2021</p>
-              </div></li>
-
-              <li><div>
-                <h2>Apprenez à créer votre site web avec HTML5 et CSS3 :</h2>
-                  <p>OpenClassrooms - 2021</p>
+                <h2>Développeur Web :</h2>
+                  <h3 class="titre_openclassrooms">OpenClassrooms - Diplôme de niveau 5 (Bac +2) - 2021</h3>
+                  <ul class="titre_openclassrooms__ul-openclassrooms">
+                    <li>Etude de Git et GitHub, HTML5, CSS3, SASS, JavaScript,
+                        JavaScript pour le web, Node.js, Express, MongoDB,
+                        MySQL et Vue.js</li>
+                    <li>Découper et intégrer une maquette</li>
+                    <li>Créer des sites dynamiques avec des animations CSS</li>
+                    <li>Optimiser le référencement d'un site (SEO), augmenter le
+                        trafic grâce au SEO, concevoir un site web pour les
+                        personnes en situation de handicap</li>
+                    <li>Créer des sites responsives avec Bootstrap 4</li>
+                    <li class="last-li-openclassrooms">Sécuriser des applications web avec l'OWASP, enrichir
+                        des projets web avec les API REST</li>
+                  </ul>
               </div></li>
 
               <li><div>
@@ -97,6 +78,11 @@
               <li><div>
                 <h2>Sauveteur secouriste du travail :</h2>
                   <p>BTP CFA de l’Hérault - 09/07/18</p>
+              </div></li>
+
+              <li><div>
+                <h2>Formation MIX 101, MIX Mastercass, Mastering :</h2>
+                  <p>La Machine à Mixer - 2019/2020</p>
               </div></li>
 
               <li><div>

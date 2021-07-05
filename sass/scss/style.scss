@@ -14,9 +14,11 @@
     src : url('../../police/Poppins-Regular.otf');
 }
 
-$hover-color: #FFF7D3;
+$hover-color: rgb(32, 47, 68);
+$hover-color2: rgb(84, 97, 117);
+$hover-color3: #0045FF;
 $background : #D3E2FA;
-$color1: black;
+$color1: rgb(32, 47, 68);
 $font: "Fire";
 $size-font: 1.1rem;
 
@@ -28,7 +30,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background: linear-gradient(14deg, rgba(234,238,255,1) 15%, rgb(223, 229, 255) 57%);
+
 
   &::before {
     animation: grain 8s steps(10) infinite;
@@ -105,7 +108,10 @@ a:link {
     padding-bottom: 6px;
   } 
   a:hover {
-    color: $hover-color;
+    color: $hover-color3;
+  }
+  .button6:hover {
+    color: $hover-color3;
   }
   .button1:after {    
     @include button;
@@ -226,7 +232,7 @@ a:link {
 	width: var(--marquee-width);
 	overflow: hidden;
 	pointer-events: none;
-  mix-blend-mode: screen;
+  mix-blend-mode: color-burn;
   color: $hover-color;
   span {
     font-style: normal;
@@ -278,8 +284,11 @@ a:link {
   font-size: 1.2rem;
   font-family: $font;
   a {
-    color: $hover-color;
+    color: $hover-color2;
     font-weight: 500;
+  }
+  a:hover {
+    color: $hover-color3;
   }
   span {
     margin-left: 15px;
@@ -313,10 +322,11 @@ a:link {
     font-family: sans-serif;
     -webkit-text-stroke: 0.2vh #000;
     color: transparent;
-    margin-bottom: 20px; 
+    margin-bottom: 100px; 
   }
   p, ul {
     font-family: "Poppin" ;
+    color: $hover-color2;
     font-size: 0.9rem;
     
   }
@@ -356,10 +366,8 @@ a:link {
     margin: 0;
     padding: 0;
   }
-  li {list-style-type: none;}
-  li:before {
-	content: "◌";
-  margin-right: 10px;
+  li {
+    list-style-type: circle;
   }
 }
 
@@ -370,6 +378,31 @@ a:link {
   a {
     color: $hover-color;
   }
+}
+
+.spacer-bar {
+  height: 4px;
+  border-radius: 20px;
+  width: 15%;
+  margin-left: 5%;
+  background-color: white;
+}
+
+.spacer-bar2 {
+  height: 4px;
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 70%;
+  background-color: white;
+}
+
+.spacer-bar3 {
+  height: 4px;
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 20%;
+  background-color: white;
+  margin-bottom: 50px;
 }
 
 // Page 3 - Compétences
@@ -491,6 +524,21 @@ a:link {
   }
   p {
     margin-bottom: 25px;
+    color: $hover-color2;
+  }
+  .titre_openclassrooms {
+    color: $hover-color;
+    margin-bottom: 10px;
+  }
+  .titre_openclassrooms__ul-openclassrooms {
+    color: $hover-color2;
+    list-style-type: circle;
+    li {
+      margin-bottom: 10px;
+    }
+    .last-li-openclassrooms {
+      margin-bottom: 20px;
+    }
   }
   ul {
     list-style-type: none;
@@ -538,6 +586,9 @@ a:link {
   .section-portfolio__img-projets {
     display: flex;
     justify-content: space-around;
+    img {
+      border-radius: 20px;
+    }
   }
 }
 
@@ -605,15 +656,14 @@ a:link {
     cursor:pointer;
     width: 91%;
     border:none;
-    background: rgb(0, 0, 0);
+    background: $hover-color;
     color:#FFF;
     margin:0 0 5px;
     padding:10px;
     font-size:0.9rem;
   }
   button[type="submit"]:hover {
-    background: $hover-color;
-    color:black;
+    background: $hover-color3;
     -webkit-transition:background 0.2s ease-in-out;
     -moz-transition:background 0.2s ease-in-out;
     transition:background-color 0.2s ease-in-out;
@@ -637,7 +687,7 @@ fieldset {
   font-family: sans-serif;
   font-size: 1.8rem;
   a {
-    color: black;
+    color: $hover-color;
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
@@ -646,7 +696,7 @@ fieldset {
     text-decoration: none;
   } 
   a:hover {
-    color: $hover-color;
+    color: $hover-color3;
   }
 }
 

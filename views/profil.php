@@ -14,14 +14,17 @@
   
     <section class="section-profil">
       <h1>À propos de moi</h1>
+        <div class="spacer-bar"></div>
         <div class="qui-suis-je">
         <h2>Qui suis-je ?</h2>
-          <p>Je m'appelle Kevin, j'ai 25 ans et je viens d'emménager récemment à Paris. J’ai découvert le métier de développeur web grâce à des rencontres avec des professionnels qui m’ont permis d’accéder aux bases de ce métier. Je me forme en autodidacte avec l'aide d'openclassroom et de nombreux autres tutoriels disponibles sur le web. Demandeur de nouveautés et de conseils avisés, je suis extrêmement motivé pour apprendre. Ayant eu l'opportunité de gérer une équipe durant mon poste de magasinier, de me lancer en tant qu'auto-entrepreneur dans l'ingénierie du son pour du mixage et du mastering et de m'être lancé dans différents projets musicaux, je sais être sérieux et autonome pour atteindre mes objectifs. </p>
+          <p>Je m'appelle Kevin et j'ai 25 ans. J’ai découvert le métier de développeur web grâce à des rencontres avec des professionnels qui m’ont permis d’accéder aux bases de ce métier. Je me forme en autodidacte avec l'aide d'openclassroom et de nombreux autres tutoriels disponibles sur le web. Demandeur de nouveautés et de conseils avisés, je suis extrêmement motivé pour apprendre. Ayant eu l'opportunité de gérer une équipe durant mon poste de magasinier, de me lancer en tant qu'auto-entrepreneur dans l'ingénierie du son pour du mixage et du mastering et de m'être lancé dans différents projets musicaux, je sais être sérieux et autonome pour atteindre mes objectifs. </p>
         </div>
+        <div class="spacer-bar2"></div>
         <div class="pourquoi-dev">
         <h3>Pourquoi le développement web ?</h3>
           <p>Je suis actuellement en apprentissage et j'aime ce que j'étudie, j'ai pu apercevoir les différents langages qu'il me restait à connaître et j'ai trouvé ça passionnant de découvrir toutes les possibilités qu'il m'était encore possible d'assimiler. Le métier de développeur web et en perpétuelle évolution, le besoin de formation est donc constant et c'est ce qui me plaît, on s'ennuie rarement. J'ai pu être confronté à différents problèmes mais ça a toujours été un plaisir d'en trouver les solutions. Je passe la majorité de mon temps libre à apprendre et je ne m'en lasse pas. J'apprécie les nouvelles technologies et être au courant de ce qui se fait. Je pense que le développement web est un métier d'avenir et j'aimerais en avoir la maîtrise. </p>
         </div>
+        <div class="spacer-bar3"></div>
           <div class="section-profil__footer">
             <div class="section-profil__footer-informations">
               <h4>Informations</h4>

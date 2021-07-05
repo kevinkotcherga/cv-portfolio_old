@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Fire";
   src: url("../../police/OpenSans-Regular.ttf");
@@ -12,7 +11,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background: linear-gradient(14deg, #eaeeff 15%, #dfe5ff 57%);
 }
 body::before {
   animation: grain 8s steps(10) infinite;
@@ -63,7 +62,7 @@ a:link {
 }
 
 .header {
-  color: black;
+  color: #202f44;
   font-family: "Fire";
   display: flex;
   justify-content: space-between;
@@ -103,17 +102,20 @@ a:link {
   margin-right: 1.2rem;
 }
 .header .nav__ul a {
-  color: black;
+  color: #202f44;
   display: inline-block;
   position: relative;
   padding-bottom: 6px;
 }
 .header .nav__ul a:hover {
-  color: #FFF7D3;
+  color: #0045FF;
+}
+.header .nav__ul .button6:hover {
+  color: #0045FF;
 }
 .header .nav__ul .button1:after {
   content: "";
-  background: #FFF7D3;
+  background: #0045FF;
   height: 1.5px;
   display: block;
   position: absolute;
@@ -124,7 +126,7 @@ a:link {
 }
 .header .nav__ul .button5:after {
   content: "";
-  background: #FFF7D3;
+  background: #0045FF;
   height: 1.5px;
   display: block;
   position: absolute;
@@ -135,7 +137,7 @@ a:link {
 }
 .header .nav__ul .button3:after {
   content: "";
-  background: #FFF7D3;
+  background: #0045FF;
   height: 1.5px;
   display: block;
   position: absolute;
@@ -146,7 +148,7 @@ a:link {
 }
 .header .nav__ul .button3:before {
   content: "";
-  background: #FFF7D3;
+  background: #0045FF;
   height: 1.5px;
   display: block;
   position: absolute;
@@ -157,7 +159,7 @@ a:link {
 }
 .header .nav__ul .button4:after {
   content: "";
-  background: #FFF7D3;
+  background: #0045FF;
   height: 1.5px;
   display: block;
   position: absolute;
@@ -168,7 +170,7 @@ a:link {
 }
 .header .nav__ul .button2:after {
   content: "";
-  background: #FFF7D3;
+  background: #0045FF;
   height: 1.5px;
   display: block;
   position: absolute;
@@ -252,8 +254,8 @@ a:link {
   width: var(--marquee-width);
   overflow: hidden;
   pointer-events: none;
-  mix-blend-mode: screen;
-  color: #FFF7D3;
+  mix-blend-mode: color-burn;
+  color: #202f44;
 }
 .marquee span {
   font-style: normal;
@@ -294,7 +296,7 @@ a:link {
   }
 }
 .footer {
-  color: black;
+  color: #202f44;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -304,8 +306,11 @@ a:link {
   font-family: "Fire";
 }
 .footer a {
-  color: #FFF7D3;
+  color: #546175;
   font-weight: 500;
+}
+.footer a:hover {
+  color: #0045FF;
 }
 .footer span {
   margin-left: 15px;
@@ -337,14 +342,15 @@ a:link {
   font-family: sans-serif;
   -webkit-text-stroke: 0.2vh #000;
   color: transparent;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 .section-profil p, .section-profil ul {
   font-family: "Poppin";
+  color: #546175;
   font-size: 0.9rem;
 }
 .section-profil h2, .section-profil h3, .section-profil h4, .section-profil h5 {
-  color: #FFF7D3;
+  color: #202f44;
 }
 .section-profil h2, .section-profil h4, .section-profil h5 {
   font-weight: 800;
@@ -376,11 +382,7 @@ a:link {
   padding: 0;
 }
 .section-profil li {
-  list-style-type: none;
-}
-.section-profil li:before {
-  content: "◌";
-  margin-right: 10px;
+  list-style-type: circle;
 }
 
 .section-profil__footer {
@@ -389,7 +391,32 @@ a:link {
   margin-bottom: 150px;
 }
 .section-profil__footer a {
-  color: #FFF7D3;
+  color: #202f44;
+}
+
+.spacer-bar {
+  height: 4px;
+  border-radius: 20px;
+  width: 15%;
+  margin-left: 5%;
+  background-color: white;
+}
+
+.spacer-bar2 {
+  height: 4px;
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 70%;
+  background-color: white;
+}
+
+.spacer-bar3 {
+  height: 4px;
+  border-radius: 20px;
+  width: 20%;
+  margin-left: 20%;
+  background-color: white;
+  margin-bottom: 50px;
 }
 
 .section-competences {
@@ -406,7 +433,7 @@ a:link {
   margin-bottom: 50px;
 }
 .section-competences h2 {
-  color: #FFF7D3;
+  color: #202f44;
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 10px;
@@ -510,6 +537,21 @@ a:link {
 }
 .section-experiences p {
   margin-bottom: 25px;
+  color: #546175;
+}
+.section-experiences .titre_openclassrooms {
+  color: #202f44;
+  margin-bottom: 10px;
+}
+.section-experiences .titre_openclassrooms__ul-openclassrooms {
+  color: #546175;
+  list-style-type: circle;
+}
+.section-experiences .titre_openclassrooms__ul-openclassrooms li {
+  margin-bottom: 10px;
+}
+.section-experiences .titre_openclassrooms__ul-openclassrooms .last-li-openclassrooms {
+  margin-bottom: 20px;
 }
 .section-experiences ul {
   list-style-type: none;
@@ -550,7 +592,7 @@ a:link {
   margin-bottom: 50px;
 }
 .section-portfolio h2 {
-  color: #FFF7D3;
+  color: #202f44;
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 10px;
@@ -559,6 +601,9 @@ a:link {
 .section-portfolio .section-portfolio__img-projets {
   display: flex;
   justify-content: space-around;
+}
+.section-portfolio .section-portfolio__img-projets img {
+  border-radius: 20px;
 }
 
 .lien-projet1 {
@@ -624,15 +669,14 @@ a:link {
   cursor: pointer;
   width: 91%;
   border: none;
-  background: black;
+  background: #202f44;
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 0.9rem;
 }
 .section-contact__container-formulaire button[type=submit]:hover {
-  background: #FFF7D3;
-  color: black;
+  background: #0045FF;
   -webkit-transition: background 0.2s ease-in-out;
   -moz-transition: background 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
@@ -658,7 +702,7 @@ fieldset {
   font-size: 1.8rem;
 }
 .section-logo-contact a {
-  color: black;
+  color: #202f44;
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
@@ -667,7 +711,7 @@ fieldset {
   text-decoration: none;
 }
 .section-logo-contact a:hover {
-  color: #FFF7D3;
+  color: #0045FF;
 }
 
 .image_mail, .image_tel, .maps {
