@@ -35,9 +35,9 @@
     </section>
 
     <section class="section-logo-contact">
-      <p><a href="mailto:kevin.kotcherga@gmail.com"><img class="image_mail" src="../images/icons/png/358-paper plane.png" alt="">Email</a></p>
-      <p><a href="tel:0644305032"><img class="image_tel" src="../images/icons/png/296-smartphone.png" alt="">Numéro</a></p>
-      <p><a href="https://www.google.fr/maps/place/8+Villa+de+l'Industrie,+93400+Saint-Ouen/@48.9090563,2.3289837,17.52z/data=!4m5!3m4!1s0x47e66ee374849dd5:0xfac3ecdf314c2e81!8m2!3d48.9090967!4d2.3306742"><img class="maps" src="../images/icons/png/135-map.png" alt="">Adresse</a></p>
+      <p><a href="mailto:kevin.kotcherga@gmail.com"><img class="image_mail" src="../pictures/icons/png/358-paper plane.png" alt="">Email</a></p>
+      <p><a href="tel:0644305032"><img class="image_tel" src="../pictures/icons/png/296-smartphone.png" alt="">Numéro</a></p>
+      <p><a href="https://www.google.fr/maps/place/8+Villa+de+l'Industrie,+93400+Saint-Ouen/@48.9090563,2.3289837,17.52z/data=!4m5!3m4!1s0x47e66ee374849dd5:0xfac3ecdf314c2e81!8m2!3d48.9090967!4d2.3306742"><img class="maps" src="../pictures/icons/png/135-map.png" alt="">Adresse</a></p>
     </section>
 
     <?php include("../php/footer.php"); ?> 

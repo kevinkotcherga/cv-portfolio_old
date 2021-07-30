@@ -1,20 +1,26 @@
 <header class="header">
-        <div class="header__titre-principale">
-           <div class="header__titre-principale-nom">
-          <h1>Kevin Kotcherga</h1>
+          <div class="header__titre-principale">
+            <div class="header__titre-principale-nom">
+              <h1>Kevin Kotcherga</h1>
             </div>
-          <p class="header__titre-principale-desciption"><span>Intégrateur web</span><span>Développeur web front end</span></p>
-        </div>
+            <p class="header__titre-principale-desciption"><span>Développeur web</span></p>
+          </div>
+          
+          <nav class="nav">
+            <ul class="nav__ul">
+              <li><a class="active" href="../index.php">Accueil</a></li>
+              <li><a href="../views/profil.php">À propos de moi</a></li>
+              <li><a href="../views/competences.php">Compétences</a></li>
+              <li><a href="../views/experiences.php">Expériences</a></li>
+              <li><a href="../views/portfolio.php">Portfolio</a></li>
+              <li><a href="../views/contact.php">Contact</a></li>
+            </ul>
+          </nav>    
+        </header>
 
-        <nav class="nav">
-      <ul class="nav__ul">
-        <li><a class="button1" href="../">Accueil</a></li>
-        <li><a class="button2" href="../views/profil.php">À propos de moi</a></li>
-        <li><a class="button3" href="../views/competences.php">Compétences</a></li>
-        <li><a class="button4" href="../views/experiences.php">Expériences</a></li>
-        <li><a class="button5" href="../views/portfolio.php">Portfolio</a></li>
-        <li><a class="button6" href="../views/contact.php">Contact</a></li>
-      </ul>
-  </nav>
-</header>
+        <ul class="nav-bar">
+          <li><a href="#"><img src="../pictures/custom/linkedin.png"></a></li>
+          <li><a href="#"><img src="../pictures/custom/github.png"></a></li>
+          <li><a href="#"><img src="../pictures/custom/cv.png"></a></li>
+        </ul>
         

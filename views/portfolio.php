@@ -13,10 +13,61 @@
   <?php include("../php/header.php"); ?>
 
     <section class="section-portfolio">
+
       <h1>Portfolio</h1> 
-        <div class="section-portfolio__img-projets">
-          <a href="../projet1/indexprojet1.php"><img class="lien-projet1" src="../images/projet1.png"></a>
-          <a href="../projet2/indexprojet2.php"><img class="lien-projet1" src="../images/projet2.png"></a>
+
+      <h2>Intégrations :</h2>
+
+        <div class="section-portfolio__integration">
+          
+          <a href="../portfolio-projects/project1-integration-scholarme/index.html">
+            <figure>
+              <img class="img-integration" src="../pictures/project1-integration-scholarme.png">
+                <figcaption>ScholarMe</figcaption>
+            </figure>
+          </a>
+
+          <a href="../portfolio-projects/project2-integration-card/index.html">
+            <figure>
+              <img class="img-integration" src="../pictures/project2-integration-card.png">
+                <figcaption>Uni</figcaption>
+            </figure>
+          </a>
+        
+        </div>
+
+      <h3>Javascript :</h3>
+
+        <div class="section-portfolio__javascript">
+
+          <a class="lien-projet-javascript" href="../portfolio-projects/project3-btnmenu/index.html">
+            <figure>
+              <img class="img-javascript" src="../pictures/project3-btnmenu.png">
+                <figcaption>Menu latéral</figcaption>
+            </figure>
+          </a>
+
+          <a href="../portfolio-projects/project4-notification/index.html">
+            <figure>
+              <img class="img-javascript" src="../pictures/project4-notification.png">
+                <figcaption>Notifications</figcaption>
+            </figure>
+          </a>
+
+          <a href="../portfolio-projects/project5-darkmode/index.html">
+            <figure>
+              <img class="img-javascript" src="../pictures/project5-darkmode.png">
+                <figcaption>Dark mode</figcaption>
+            </figure>
+          </a>
+
+          <a href="../portfolio-projects/project6-test/index.html">
+            <figure>
+              <img class="img-javascript" src="../pictures/project5-darkmode.png">
+                <figcaption>Dark mode</figcaption>
+            </figure>
+          </a>
+
         </div>
     </section>
 
