@@ -29,6 +29,9 @@ $size-font: 1.1rem;
 }
 
 body {
+  overflow-x: hidden;
+  overflow-y: hidden; 
+  max-height: 1000px;
   color :$color1;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -161,7 +164,7 @@ section {
 
 .imgBx img {
   overflow: hidden;
-  max-width: 590px;
+  max-width: 650px;
   animation: anim 7s linear infinite;
 }
 
@@ -243,30 +246,9 @@ section {
 }
 
 .container-card {
-  padding: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 600rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  flex-wrap: wrap;
-  z-index: 1;
+  @include container-card;
   .card {
-    position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    border-radius: 15px;
-    background: rgba(255,255,255,0.05);
-    overflow: hidden;
-    display: flex;
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left: 1px solid rgba(255,255,255,0.5);
-    backdrop-filter: blur(5px);
+    @include card;
     .content-card {
       padding: 20px;
       text-align: center;
@@ -307,18 +289,23 @@ section {
   }
 }
 
+.card_orange {
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+
 .imgDoodle img {
 position: fixed;
 top: 200px;
 left: 70px;
 overflow: hidden;
 max-width: 250px;
-animation: anim2 15s linear infinite;
+animation: anim 15s linear infinite;
 
 }
 
 
-@keyframes anim2 {
+@keyframes anim {
   0%, 100%
   {
     transform: translateY(50px);
@@ -335,16 +322,29 @@ animation: anim2 15s linear infinite;
   right: 170px;
   overflow: hidden;
   max-width: 150px;
-  animation: anim2 10s linear infinite;
+  animation: anim2 15s linear infinite;
+  }
+
+  @keyframes anim2 {
+    0%, 100%
+    {
+      transform: translateY(100px);
+    }
+    50% 
+    {
+      transform: translateY(50px);
+    }
   }
 
 // Page 3 - Compétences
 
 .section-competences {
   @include glassmorphism;
-  width: 3000px;
+  width: 1200px;
   padding: 30px;
-  margin: 50px;
+  margin: 500px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-around;
   img {
@@ -399,132 +399,138 @@ animation: anim2 15s linear infinite;
 
 // Page 4 - Experiences
 
-.titre_experiences {
-  position: relative;
-  text-align: center;
-  font-size: 5vw;
-  font-family: sans-serif;
-  -webkit-text-stroke: 0.2vh #000;
-  color: transparent;
-  margin-top: 100px;  
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.section-experiences {
+.container-card__experience {
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600rem;
   position: relative;
   display: flex;
-  margin: 100px 100px 200px 100px;
-  h1 {
-    font-size: 1.3rem;
-    font-weight: 900;
-    margin-bottom: 50px;
-    color: black;
-  }
-  h2, h3, p {
-    margin: 0;
-  } 
-  h2 {
-    font-weight: 900;
-    color:black;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-  }
-  h3 {
-    font-size: 1rem;
-  }
-  p {
-    margin-bottom: 25px;
-    color: $hover-color2;
-  }
-  .titre_openclassrooms {
-    color: $hover-color;
-    margin-bottom: 10px;
-  }
-  .titre_openclassrooms__ul-openclassrooms {
-    color: $hover-color2;
-    list-style-type: circle;
-    li {
-      margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+  .card__experience {
+    position: relative;
+    width: 440px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 221, 25, 0.05);
+    overflow: hidden;
+    display: flex;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    .content-card__experience {
+      padding: 20px;
+      text-align: center;
+      h2 {
+        position: absolute;
+        top: -80px;
+        right: 30px;
+        font-size: 8rem;
+        color: rgba(255,255,255,0.3);
+        pointer-events: none;
+      }
+      h3 {
+        font-size: 1.1rem;
+        color :$color1;
+        z-index: 1;
+        margin-bottom: 20px;
+      }
+      h4 {
+    
+          font-size: 1.1rem;
+          color :$color1;
+          z-index: 1;
+          margin: 60px 0 20px 0;
+        }
+      p, li {
+        font-size: 0.8rem;
+        color :$color1;
+        font-weight: 300;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        color :$color1;
+        text-decoration: none;
+      }
     }
-    .last-li-openclassrooms {
-      margin-bottom: 20px;
-    }
   }
-  ul {
-    list-style-type: none;
-  }
-}
-
-.section-experiences__experiences-pro {
-  @include border;
-  @include glassmorphism;
-  padding-right: 200px;
-  flex: 1;
-  padding: 40px;
-  margin-right: 20px;
-}
-
-.section-experiences__diplomes {
-  @include border;
-  @include glassmorphism;
-  flex: 1;
-  padding: 40px;
-  margin-left: 20px;
 }
 
 // Page 5 - Portfolio 
 
-.section-portfolio {
+.container-card__portfolio {
+  margin: 300px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600rem;
   position: relative;
-  h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+  .card__portfolio {
     position: relative;
-  text-align: center;
-  font-size: 5vw;
-  font-family: sans-serif;
-  -webkit-text-stroke: 0.2vh #000;
-  color: transparent;
-  margin-top: 100px;  
-  text-align: center;
-  margin-bottom: 50px;
-  }
-  h2, h3 {
-    color: $hover-color;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-  }
-}
-
-  .section-portfolio__integration, .section-portfolio__javascript {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    overflow: hidden;
     display: flex;
-    justify-content: space-around;
-    img {
-      border-radius: 20px;
-    }
-    h2, h3 {
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    .content-card__portfolio {
+      padding: 20px;
       text-align: center;
+      h2 {
+        position: absolute;
+        top: -80px;
+        right: 30px;
+        font-size: 8rem;
+        color: rgba(255,255,255,0.3);
+        pointer-events: none;
+      }
+      h3 {
+        font-size: 1.1rem;
+        color :$color1;
+        z-index: 1;
+        margin-bottom: 20px;
+      }
+      h4 {
+    
+          font-size: 1.1rem;
+          color :$color1;
+          z-index: 1;
+          margin: 60px 0 20px 0;
+        }
+      p, li {
+        font-size: 0.8rem;
+        color :$color1;
+        font-weight: 300;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        color :$color1;
+        text-decoration: none;
+      }
     }
-    a {
-      transition: transform 0.3s ease-in-out;
-    }
-    a:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s ease-in-out;
-    }
-  }
-
-.section-portfolio__integration {
-  margin: 120px 0 200px 0;
-   a {
-    color: #000;
-  }
-}
-
-.section-portfolio__javascript {
-  margin: 120px 0 230px 0;
-  a {
-    color: #000;
   }
 }
 
@@ -534,7 +540,7 @@ animation: anim2 15s linear infinite;
   border-left: 1px solid rgba(255,255,255,0.5);
   margin:auto;
   display:flex;
-  width: 500px;
+  width: 100px;
   max-width: 100%;
 	height: auto;
   display: inline-block;  
@@ -545,7 +551,7 @@ animation: anim2 15s linear infinite;
   border-top: 1px solid rgba(255,255,255,0.5);
   border-left: 1px solid rgba(255,255,255,0.5);
   display: inline-block;
-  width: 300px;
+  width: 100px;
 }
 
 figcaption {
@@ -558,6 +564,73 @@ figcaption {
 
 
 // Page 6 - Contact 
+
+.container-card__contact {
+  
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+  .card__contact {
+    position: relative;
+    width: 550px;
+    height: 450px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    .content-card__contact {
+      padding: 20px;
+      text-align: center;
+      h2 {
+        position: absolute;
+        top: -80px;
+        right: 30px;
+        font-size: 8rem;
+        color: rgba(255,255,255,0.3);
+        pointer-events: none;
+      }
+      h3 {
+        font-size: 1.1rem;
+        color :$color1;
+        z-index: 1;
+        margin-bottom: 20px;
+      }
+      h4 {
+    
+          font-size: 1.1rem;
+          color :$color1;
+          z-index: 1;
+          margin: 60px 0 20px 0;
+        }
+      p, li {
+        font-size: 0.8rem;
+        color :$color1;
+        font-weight: 300;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        color :$color1;
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 .section-contact {
   position: relative;
@@ -581,9 +654,6 @@ figcaption {
 // Formulaire
 
 .section-contact__container-formulaire {
-  @include glassmorphism;
-	padding: 20px;
-	margin: 50px 0px 50px 0;  
   text-align: center;
   h3 {
     font-size: 1.3rem;
@@ -624,7 +694,6 @@ fieldset {
 }
 
 .section-logo-contact {
-  @include glassmorphism;
   padding: 5px;
   position: relative;
   display: flex;

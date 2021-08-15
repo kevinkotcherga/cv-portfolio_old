@@ -2,66 +2,45 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css"
+  <link rel="stylesheet" href="../sass/css/style.css"/>
+  <title>Kevin Kotcherga</title>
 </head>
 
-  <body>
-    <section>
-      <div class="container">
-        <header class="header">
-          <div class="header__titre-principale">
-            <div class="header__titre-principale-nom">
-              <h1>Kevin Kotcherga</h1>
-            </div>
-            <p class="header__titre-principale-desciption"><span>Développeur web</span></p>
-          </div>
-          
-          <nav class="nav">
-            <ul class="nav__ul">
-              <li><a class="active" href="/">Accueil</a></li>
-              <li><a href="views/profil.php">À propos de moi</a></li>
-              <li><a href="views/competences.php">Compétences</a></li>
-              <li><a href="views/experiences.php">Expériences</a></li>
-              <li><a href="views/portfolio.php">Portfolio</a></li>
-              <li><a href="views/contact.php">Contact</a></li>
-            </ul>
-          </nav>    
-        </header>
+<body class="body">
+  <div id="bloc_page">
 
-        <section class="section-competences">
-          <h1>Compétences</h1>
-            <h2>J'ai acquéri des notions dans :</h2>
-              <div class="section-competences__bloc-competences">
-                <p><img class="html5" src="../pictures/html-black.png" alt="">Html 5</p>
-                <p><img class="bootstrap"  src="../pictures/bootstrap.png" alt="">Bootstrap</p>
-                <p><img class="css3" src="../pictures/css3-black.png" alt="">Css 3</p>
-                <p><img class="php" src="../pictures/php.png" alt="">Php</p>
-                <p><img class="visual" src="../pictures/visual_studio.png" alt="">Visual Studio Code</p>
-                <p><img class="javascript" src="../pictures/javascript.png" alt="">JavaScript</p>
-                <p><img class="sass" src="../pictures/sass-white.png" alt="">Sass & BEM</p>
-                <p><img class="responsive" src="../pictures/multiscreen.png" alt="">Responsive Design</p>
-                <p><img class="git" src="../pictures/Git-Logo-Black.png" alt="">Git & GitHub</p>  
-              </div>  
-        </section>
-        
-        </div>
-        </div>    
+  <?php include("../php/header.php"); ?>
 
-      
-
-        <ul class="nav-bar">
-          <li><a href="#"><img src="../../pictures/custom/linkedin.png"></a></li>
-          <li><a href="#"><img src="../../pictures/custom/github.png"></a></li>
-          <li><a href="#"><img src="../../pictures/custom/cv.png"></a></li>
-        </ul>
-
-        <p class="copyrightText">© 2021 Développer par Kevin
-          Kotcherga</p>
-
-      </div>
+    <section class="section-contact">
+      <h1>Contact</h1>
+        <div class="section-contact__container">  
+          <form class="section-contact__container-formulaire" action="../php/sendEmail.php" method="post">
+            <h3>Merci de prendre le temps de me contacter</h3>
+            <h4>Laissez moi un message et j'y répondrai le plus rapidement possible :</h4>
+              <fieldset>
+                <input class="section-contact__container-formulaire-name" name='nom' placeholder="Nom" type="text" tabindex="1" required autofocus>
+              </fieldset>
+              <fieldset>
+                <input class="section-contact__container-formulaire-email" name='email' placeholder="Email" type="email" tabindex="2" required>
+              </fieldset>
+              <fieldset>
+                <textarea class="section-contact__container-formulaire-message" name='message' placeholder="Php en cours d'apprentisage, envoie de formulaire disponible prochainement." tabindex="3" required></textarea>
+              </fieldset>
+              <fieldset>
+                <button id="contact-submit" name="submit" type="submit" data-submit="...Sending">Envoyer votre message</button>
+              </fieldset>
+          </form>
+         </div>
     </section>
-  </body>
+
+    <section class="section-logo-contact">
+      <p><a href="mailto:kevin.kotcherga@gmail.com"><img class="image_mail" src="../pictures/icons/png/358-paper plane.png" alt="">Email</a></p>
+      <p><a href="tel:0644305032"><img class="image_tel" src="../pictures/icons/png/296-smartphone.png" alt="">Numéro</a></p>
+      <p><a href="https://www.google.fr/maps/place/8+Villa+de+l'Industrie,+93400+Saint-Ouen/@48.9090563,2.3289837,17.52z/data=!4m5!3m4!1s0x47e66ee374849dd5:0xfac3ecdf314c2e81!8m2!3d48.9090967!4d2.3306742"><img class="maps" src="../pictures/icons/png/135-map.png" alt="">Adresse</a></p>
+    </section>
+
+    <?php include("../php/footer.php"); ?> 
+    
+</body>
 </html>

@@ -40,9 +40,9 @@
 
         <div class="content">
           <h2>Bienvenue</h2>
-            <p>Je suis un développeur web utilisant Html, Css, Php et Javascript. N'hésitez pas à jeter un œil à mes derniers projets dans la section portfolio.</p>
+            <p>Je suis un développeur web utilisant html, css, php et javascript. N'hésitez pas à jeter un œil à mes derniers projets dans la section portfolio.</p>
 
-            <a href="#">Portfolio</a>
+            <a href="../kevin_kotcherga_cv/views/portfolio.php">Portfolio</a>
         </div>
 
         <div class="imgBx">

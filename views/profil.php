@@ -15,7 +15,7 @@
       <?php include("../php/header.php"); ?>
 
         <div class="container-card">
-          <div class="card">
+          <div class="card card_orange">
             <div class="content-card">
               <h2></h2>
               <h3>Qui suis-je ?</h3>
