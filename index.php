@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../kevin_kotcherga_cv/sass/css/style.css"
+  <link rel="stylesheet" href="sass/css/style.css"
 </head>
 
   <body>
@@ -33,9 +33,9 @@
         </header>
 
         <ul class="nav-bar">
-          <li><a href="#"><img src="../kevin_kotcherga_cv/pictures/custom/linkedin.png"></a></li>
-          <li><a href="#"><img src="../kevin_kotcherga_cv/pictures/custom/github.png"></a></li>
-          <li><a href="#"><img src="../kevin_kotcherga_cv/pictures/custom/cv.png"></a></li>
+          <li><a href="#"><img alt="" src="pictures/custom/linkedin.png"></a></li>
+          <li><a href="#"><img alt="" src="pictures/custom/github.png"></a></li>
+          <li><a href="#"><img alt="" src="pictures/custom/cv.png"></a></li>
         </ul>
 
         <div class="content">
@@ -46,7 +46,7 @@
         </div>
 
         <div class="imgBx">
-          <img src="../kevin_kotcherga_cv/pictures/custom/Saly-38.png">
+          <img src="pictures/custom/Saly-38.png">
         </div>
 
         <p class="copyrightText">© 2021 Développé par Kevin Kotcherga</p>

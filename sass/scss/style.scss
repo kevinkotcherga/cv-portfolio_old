@@ -1,8 +1,8 @@
 @import "variables";
-@import "effets.scss";
-@import "function.scss";
-@import "mixins.scss";
-@import "button.scss";
+@import "effets";
+@import "function";
+@import "mixins";
+@import "button";
 
 @font-face {
   font-family: "Open";
@@ -28,12 +28,19 @@ $size-font: 1.1rem;
   font-family: "Poppin";
 }
 
+
 body {
   color :$color1;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+#bloc_page, .container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 // Page 1 - Accueil 

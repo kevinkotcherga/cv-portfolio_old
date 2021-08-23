@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../sass/css/style.css"
+  <title>Document</title><!--titre -->
+  <link rel="stylesheet" href="../sass/css/style.css">
 </head>
 
   <body>
@@ -17,7 +17,7 @@
         <div class="container-card">
           <div class="card">
             <div class="content-card">
-              <h2></h2>
+              <h2></h2> <!-- h2 vide -->
               <h3>Qui suis-je ?</h3>
               <p>Je m'appelle Kevin, j’ai découvert le métier de développeur grâce à des rencontres avec des professionnels qui m’ont permis d’accéder aux bases de ce métier. </br></br> Je me forme en autodidacte avec l'aide d'openclassroom et de nombreux autres tutoriels disponibles sur le web.</br></br> Demandeur de nouveautés et de conseils avisés, je suis extrêmement motivé pour apprendre, je sais être sérieux et autonome pour atteindre mes objectifs.</p>
             </div>
@@ -25,7 +25,7 @@
 
           <div class="card">
             <div class="content-card">
-              <h2></h2>
+              <h2></h2><!-- h2 vide -->
               <h3>Pourquoi le développement web ?</h3>
               <p>Je suis actuellement en apprentissage et j'aime ce que j'étudie, j'ai pu apercevoir les différents langages qu'il me restait à apprendre et j'ai trouvé ça passionnant.</br></br> Le métier de développeur web et en perpétuelle évolution, le besoin de formation est donc constant et c'est ce qui me plaît, on s'ennuie rarement. J'ai pu être confronté à différents problèmes mais ça a toujours été un plaisir d'en trouver les solutions.</p>
             </div>
@@ -33,7 +33,7 @@
 
           <div class="card">
             <div class="content-card">
-              <h2></h2>
+              <h2></h2><!-- h2 vide -->
               <h3>Informations</h3>
               <ul>
                   <li>Permis b</li>
@@ -61,7 +61,7 @@
         </script>
 
         <div class="imgDoodle">
-          <img src="../pictures/custom/object.png">
+          <img src="../pictures/custom/object.png"> <!--l'attribut alt est obligatoire sur les img -->
         </div>
 
         <div class="imgDoodle2">
