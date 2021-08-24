@@ -39,6 +39,12 @@ body {
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
+#bloc_page, .container {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 // Page 1 - Accueil 
 
 /* Style containers glassmorphism*/
@@ -86,7 +92,6 @@ section {
   border-top: 1px solid rgba(255,255,255,0.5);
   border-left: 1px solid rgba(255,255,255,0.5);
   .header__titre-principale {
-    
     display: flex;
     align-items: baseline;
     h1 {
@@ -261,15 +266,15 @@ section {
         pointer-events: none;
       }
       h3 {
-        font-size: 1.1rem;
-        color :$color1;
+        font-size: 1.3rem;
+        color : #fff;
         z-index: 1;
         margin-bottom: 20px;
       }
       h4 {
     
-          font-size: 1.1rem;
-          color :$color1;
+          font-size: 1.3rem;
+          color : #fff;
           z-index: 1;
           margin: 60px 0 20px 0;
         }
@@ -295,13 +300,12 @@ section {
 }
 
 .imgDoodle img {
-position: fixed;
+position: absolute;
 top: 200px;
-left: 70px;
+left: -70px;
 overflow: hidden;
 max-width: 250px;
 animation: anim 15s linear infinite;
-
 }
 
 
@@ -317,9 +321,9 @@ animation: anim 15s linear infinite;
 }
 
 .imgDoodle2 img {
-  position: fixed;
+  position: absolute;
   top: 90px;
-  right: 170px;
+  right: 30px;
   overflow: hidden;
   max-width: 150px;
   animation: anim2 15s linear infinite;
@@ -339,6 +343,7 @@ animation: anim 15s linear infinite;
 // Page 3 - Compétences
 
 .section-competences {
+  position: relative;
   @include glassmorphism;
   width: 1200px;
   padding: 30px;
@@ -347,47 +352,49 @@ animation: anim 15s linear infinite;
   margin-right: auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  text-align: center;
   img {
     max-width: 100%;
 	  height: auto;
   }
   .html5 {
-    width: 130px;
+    width: 110px;
     margin-bottom: 22px;
   }
   .sass {
-    width: 130px;
+    width: 115px;
     margin-bottom: 21px;
   }
   .git {
-    width: 150px;
+    width: 110px;
     margin: 30px 20px 57px 0;
   }
   .bootstrap {
-    width: 100px;
+    width: 80px;
     margin-top: 23px;
     margin-bottom: 28px;
   }
   .visual {
-    width: 130px;
+    width: 110px;
     margin-top: 5px;
     margin-bottom: 18px;
   }
   .responsive {
-    width: 110px;
+    width: 95px;
     margin-top: 15px;
     margin-bottom: 25px;
   }
   .css3 {
-    width: 130px;
+    width: 110px;
     margin-bottom: 23px;
   }
   .php {
-    width: 130px;
+    width: 110px;
     margin: 5px 0 18px 0;
   }
   .javascript {
-    width: 105px;
+    width: 90px;
     margin: 10px 0 23px 0;
   }
   p {
@@ -396,6 +403,32 @@ animation: anim 15s linear infinite;
     align-items: center;
   }
 }
+
+.imgDoodle3 {
+  transform: rotate(45deg);
+}
+
+.imgDoodle4 {
+  transform: rotate(150deg);
+}
+
+.imgDoodle3 img {
+  position: absolute;
+  top: -400px;
+  left: 200px;
+  overflow: hidden;
+  max-width: 200px;
+  animation: anim 15s linear infinite;
+  }
+
+  .imgDoodle4 img {
+    position: absolute;
+    top: -650px;
+    left: -1000px;
+    overflow: hidden;
+    max-width: 150px;
+    animation: anim2 15s linear infinite;
+    }
 
 // Page 4 - Experiences
 
