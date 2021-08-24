@@ -410,7 +410,7 @@ section {
   left: 200px;
   overflow: hidden;
   max-width: 200px;
-  animation: anim 15s linear infinite;
+  animation: anim 5s linear infinite;
 }
 
 .imgDoodle4 img {
