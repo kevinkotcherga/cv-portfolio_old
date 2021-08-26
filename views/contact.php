@@ -5,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../sass/css/style.css"
+  <link rel="stylesheet" href="../sass/css/style.css">
+  <script src="../kevin_kotcherga_cv/main.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body id="body">
     <section>
       <div class="container">
 
@@ -40,6 +42,14 @@
             </div>
           </div>
         </div>
+
+        <div class="imgDoodle10">
+            <img src="../pictures/custom/object11.png">
+          </div>
+
+          <div class="imgDoodle11">
+            <img src="../pictures/custom/object11.png">
+          </div>
 
         <?php include("../php/footer.php"); ?>
 

@@ -5,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../kevin_kotcherga_cv/sass/css/style.css"
+  <link rel="stylesheet" href="../kevin_kotcherga_cv/sass/css/style.css">
+  <script src="../kevin_kotcherga_cv/main.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-  <body>
+  <body id="body">
     <section>
       <div class="container">
         
@@ -49,7 +51,13 @@
           <img src="../kevin_kotcherga_cv/pictures/custom/Saly-38.png">
         </div>
 
-        <p class="copyrightText">© 2021 Développé par Kevin Kotcherga</p>
+        
+        <label class="switch">
+          <input type="checkbox" onclick="darkLight()" id="checkBox" >
+          <span class="slider"></span>
+          <span class="on">ON</span>
+          <span class="off">OFF</span>
+        </label>
 
       </div>
     </section>

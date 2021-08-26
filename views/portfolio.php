@@ -5,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../sass/css/style.css"
+  <link rel="stylesheet" href="../sass/css/style.css">
+  <script src="../kevin_kotcherga_cv/main.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body id="body">
     <section>
       <div class="container">
 
@@ -75,13 +77,20 @@
         <script type="text/javascript" src="../vanilla-tilt.js"></script>
         <script> 
           VanillaTilt.init(document.querySelectorAll(".card__portfolio"),{
-		      max: 25,
-		      speed: 400,
+          max: 20,
+          speed: 1000,
           glare: true,
           "max-glare": 1,
 	        });
         </script>
                
+          <div class="imgDoodle8">
+            <img src="../pictures/custom/object8.png">
+          </div>
+
+          <div class="imgDoodle9">
+            <img src="../pictures/custom/object9.png">
+          </div>      
 
         <?php include("../php/footer.php"); ?>
 

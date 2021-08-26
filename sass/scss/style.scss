@@ -29,19 +29,27 @@ $size-font: 1.1rem;
 }
 
 body {
+  --link: #385A94;
+  --background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  --text-color: var(--link);
+  color: var(--text-color);
+  background-image: var(--background-image);
   overflow-x: hidden;
   overflow-y: hidden; 
   max-height: 1000px;
-  color :$color1;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.dark {
+  --background-image: linear-gradient(to top, #152028 0%, #202945 100%);
+  color: #efefef;
 }
 
 #bloc_page, .container {
   position: relative;
-  max-width: 1600px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -54,7 +62,6 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   padding: 50px;
 }
 
@@ -170,7 +177,7 @@ section {
 .imgBx img {
   overflow: hidden;
   max-width: 650px;
-  animation: anim 7s linear infinite;
+  animation: anim 15s ease-in-out infinite;
 }
 
 @keyframes anim {
@@ -225,7 +232,78 @@ section {
   font-size: 1rem;
   position: absolute;
   bottom: 20px;
+  right: 50px;
+}
+
+.darkmode {
+  position: absolute;
+  bottom: 20px;
   left: 50px;
+}
+
+// Toggle Darkmode
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #E7BCE5;
+  border-radius: 20px;
+  box-shadow: -2px -2px 8px rgb(255, 219, 230),
+              -2px -2px 12px rgba(255, 255, 255, 0.5),
+              inset -2px -2px 8px rgba(255, 219, 230, 1),
+              inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+              inset 2px 2px 8px rgba(0, 0, 0, .3),
+              2px 2px 8px rgba(0, 0, 0, .3);
+  background-color: #E7BCE5;
+}
+.slider:before {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  z-index: 999;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: -2px -2px 8px rgba(255, 219, 230, 1),
+              -2px -2px 12px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+              2px 2px 8px rgba(0, 0, 0, .3);
+  background-color: #E7BCE5;
+  content: "";
+  transition: .5s;
+}
+.off {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  color: #3d3935;
+  font-size: .8125rem;
+}
+.on {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: #000000;
+  font-size: .8125rem;
+}
+input:checked + .slider:before {
+  transform: translateX(33px);
 }
 
 // page 2 - A propos de moi 
@@ -267,14 +345,14 @@ section {
       }
       h3 {
         font-size: 1.3rem;
-        color : #fff;
+        color : $color1;
         z-index: 1;
         margin-bottom: 20px;
       }
       h4 {
     
           font-size: 1.3rem;
-          color : #fff;
+          color : $color1;
           z-index: 1;
           margin: 60px 0 20px 0;
         }
@@ -305,7 +383,7 @@ top: 200px;
 left: -70px;
 overflow: hidden;
 max-width: 250px;
-animation: anim 15s linear infinite;
+animation: anim 20s ease-in-out infinite;
 }
 
 
@@ -326,7 +404,7 @@ animation: anim 15s linear infinite;
   right: 30px;
   overflow: hidden;
   max-width: 150px;
-  animation: anim2 15s linear infinite;
+  animation: anim2 20s ease-in-out infinite;
   }
 
   @keyframes anim2 {
@@ -336,7 +414,7 @@ animation: anim 15s linear infinite;
     }
     50% 
     {
-      transform: translateY(50px);
+      transform: translateY(60px);
     }
   }
 
@@ -405,30 +483,43 @@ animation: anim 15s linear infinite;
 }
 
 .imgDoodle3 {
-  transform: rotate(45deg);
+  transform: rotate(20deg);
 }
 
 .imgDoodle4 {
-  transform: rotate(150deg);
+  transform: rotate(-20deg);
 }
 
 .imgDoodle3 img {
   position: absolute;
-  top: -400px;
-  left: 200px;
+  top: -200px;
+  left: 0px;
   overflow: hidden;
-  max-width: 200px;
-  animation: anim 5s linear infinite;
+  max-width: 250px;
+  animation: anim3 20s ease-in-out infinite;
+  }
+
+  @keyframes anim3 {
+    0%, 100%
+    {
+      transform: translateY(50px);
+    }
+    50% 
+    {
+      transform: translateY(70px);
+    }
   }
 
   .imgDoodle4 img {
     position: absolute;
-    top: -650px;
-    left: -1000px;
+    top: 270px;
+    right: -1200px;
     overflow: hidden;
-    max-width: 150px;
-    animation: anim2 15s linear infinite;
+    max-width: 120px;
+    animation: anim2 20s ease-in-out infinite;
     }
+
+  
 
 // Page 4 - Experiences
 
@@ -469,7 +560,7 @@ animation: anim 15s linear infinite;
         pointer-events: none;
       }
       h3 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         color :$color1;
         z-index: 1;
         margin-bottom: 20px;
@@ -481,10 +572,14 @@ animation: anim 15s linear infinite;
           z-index: 1;
           margin: 60px 0 20px 0;
         }
-      p, li {
-        font-size: 0.8rem;
+      p {
+        font-size: 0.9rem;
         color :$color1;
         font-weight: 300;
+        margin-top: 16px;
+        .titre {
+          font-weight: 1000;
+        }
       }
       li {
         list-style: none;
@@ -495,6 +590,48 @@ animation: anim 15s linear infinite;
       }
     }
   }
+}
+
+.imgDoodle5 img {
+  position: absolute;
+  top: 50px;
+  right: 1000px;
+  overflow: hidden;
+  max-width: 250px;
+  animation: anim 20s ease-in-out infinite;
+  }
+
+  .imgDoodle6 img {
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    overflow: hidden;
+    max-width: 100px;
+    animation: anim4 19s ease-in-out infinite;
+    }
+
+    .imgDoodle7 img {
+      position: absolute;
+      top: 100px;
+      right: 35px;
+      overflow: hidden;
+      max-width: 150px;
+      animation: anim2 20s ease-in-out infinite;
+      }
+
+      @keyframes anim4 {
+        0%, 100%
+        {
+          transform: translateY(110px);
+        }
+        50% 
+        {
+          transform: translateY(70px);
+        }
+      }
+
+.imgDoodle5{
+  transform: rotate(15deg)
 }
 
 // Page 5 - Portfolio 
@@ -595,6 +732,23 @@ figcaption {
   height: 300px;
 }
 
+.imgDoodle8 img {
+  position: absolute;
+  top: 120px;
+  left: -20px;
+  overflow: hidden;
+  max-width: 250px;
+  animation: anim3 20s ease-in-out infinite;
+  }
+
+  .imgDoodle9 img {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    overflow: hidden;
+    max-width: 200px;
+    animation: anim2 20s ease-in-out infinite;
+    }  
 
 // Page 6 - Contact 
 
@@ -683,6 +837,33 @@ figcaption {
   text-align: center;
   } 
 }
+
+.imgDoodle10 img {
+  position: absolute;
+  top: 0px;
+  right: 800px;
+  overflow: hidden;
+  max-width: 250px;
+  animation: anim3 20s ease-in-out infinite;
+  }
+
+  .imgDoodle11 img {
+    position: absolute;
+    top: -300px;
+    right: 200px;
+    overflow: hidden;
+    max-width: 200px;
+    animation: anim2 30s ease-in-out infinite;
+    } 
+
+.imgDoodle10 {
+  transform: rotate(15deg);
+}
+
+.imgDoodle11 {
+  transform: rotate(-15deg);
+}
+
 
 // Formulaire
 
