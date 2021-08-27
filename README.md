@@ -1,2 +1,2 @@
 # Kevin Kotcherga CV
-Mon site cv portfolio
+(install project)
