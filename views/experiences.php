@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../sass/css/style.css">
-  <script src="../kevin_kotcherga_cv/main.js" defer></script>
+  <script src="../main.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
