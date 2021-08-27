@@ -16,7 +16,7 @@
 body {
   --link: #385A94;
   --fill:#385A94;
-  --background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  --background-body: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   --text-color: var(--link);
   --background:#FCFCFC;
   --background-button:#FCFCFC;
@@ -30,17 +30,15 @@ body {
   --box-shadow3: 0 5px 10px rgba(0,0,0,0.1);
   --border: 1px solid #F7DAF3;
   color: var(--text-color);
-  background-image: var(--background-image);
-  overflow-x: hidden;
-  overflow-y: hidden;
-  max-height: 1000px;
+  background: var(--background-body);
+  overflow: hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .dark {
-  --background-image: linear-gradient(to top, #3D2A54 0%, #313D5C 100%);
+  --background-body: linear-gradient(to top, #3D2A54 0%, #313D5C 100%);
   --link: #F4EEFF;
   --background: #313D5C;
   --background-button: #F4EEFF;
@@ -924,6 +922,88 @@ fieldset {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    position: relative;
+    width: calc(100%-20px);
+  }
+}
+@media (max-width: 1410px) {
+  body {
+    overflow: scroll;
+  }
+
+  section {
+    padding: 50px 10px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: 2000px;
+    padding: 20px;
+    max-height: 1000px;
+    margin: 50px 0 150px 0;
+  }
+  .container .content {
+    transform: translateX(0px);
+    max-width: 100%;
+    padding: 30px;
+    margin-top: 150px;
+  }
+  .container .content a {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  header {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    top: -60px;
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
+  header ul {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header ul li {
+    margin: 2px;
+  }
+  header ul li a {
+    display: inline-block;
+  }
+
+  .imgBx img {
+    position: relative;
+    top: -50px;
+  }
+
+  .nav-bar {
+    position: relative;
+    bottom: -900px;
+    right: 500px;
+    flex-direction: row;
+  }
+  .nav-bar li a {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+  .content h2 {
+    font-size: 1.5em;
+  }
+  .content p {
+    font-size: 1em;
+  }
+
+  .imgBx img {
+    max-width: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,7 @@
           <nav class="nav">
             <ul class="nav__ul">
               <li><a class="active" href="/">Accueil</a></li>
-              <li><a href="views/profil.php">À propos de moi</a></li>
+              <li><a href="views/profil.php">À propos</a></li>
               <li><a href="views/competences.php">Compétences</a></li>
               <li><a href="views/experiences.php">Expériences</a></li>
               <li><a href="views/portfolio.php">Portfolio</a></li>
