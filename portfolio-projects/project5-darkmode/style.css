@@ -29,7 +29,7 @@ body {
   flex-direction: column;
 }
 
-section.dark {
+.dark {
   --background-color: #000;
   --link: #fefefe;
 }

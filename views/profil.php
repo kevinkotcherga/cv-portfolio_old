@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../pictures/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../pictures/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../pictures/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../pictures/favicon/site.webmanifest">
+  <link rel="stylesheet" href="sass/css/style.css">
   <link rel="stylesheet" href="../sass/css/style.css">
   <script src="../main.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -26,7 +31,7 @@
             <img src="../pictures/custom/object2.png">
           </div>
 
-            <div class="card card_orange">
+            <div class="card">
               <div class="content-card">
                 <h2></h2>
                 <h3>Qui suis-je ?</h3>
