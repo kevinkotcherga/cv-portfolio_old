@@ -77,6 +77,17 @@
             </div>
           </div>
 
+          <div class="card__portfolio">
+            <div class="content-card__portfolio">
+              <a href="../portfolio-projects/project7-quiz/index.html">
+                <figure>
+                  <img class="img-javascript" src="../pictures/project5-darkmode.png">
+                    <figcaption>Quiz</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+
         </div>
 
         <script type="text/javascript" src="../vanilla-tilt.js"></script>
