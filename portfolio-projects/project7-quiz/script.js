@@ -1,6 +1,6 @@
 const quizData = [
   {
-    question: "1/4) Hierakonpolis est un des sites archéologiques les plus important d’Egypte. En 2009, on y a trouvé quelque chose d'insolite. Mais quoi ?",
+    question: "1/4) Hierakonpolis est l'un des sites archéologiques les plus important d’Egypte. En 2009, on y a découvert quelque chose d'insolite. Mais quoi ?",
     a: 'Un zoo de plus de 3500ans',
     b: 'Une piste de danse de plus de 3500ans',
     c: "Un parc d'accrobranche de plus de 3500ans",

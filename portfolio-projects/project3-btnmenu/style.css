@@ -3,29 +3,31 @@
   src: url("../../fonts/OpenSans-Regular.ttf");
 }
 
-.button-back{
-  font-family: "Open-Sans";
-  font-size: 1.3rem;
+.btn-back {
+  position: absolute;
+  top: 10px;
+  left: 0px;
   margin-left: 30px;
 }
 
-a {
-  color: black;
+.btn-back:hover {
+  cursor: pointer;
 }
 
-a:link 
-{ 
- text-decoration:none;
-} 
 
-.body-projet3 {
-  font-family: "Open-Sans";
-  margin: 0;
-  background-color: rgb(243, 245, 247 );
+body {
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
 }
 
 button{
-  background-color: rebeccapurple;
+  background-color: #009ffd;
   border: solid black;
   border-radius: 3px;
   color: white;
@@ -41,7 +43,8 @@ button.active {
 }
 
 nav {
-  background-color: rebeccapurple;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #ff0000 0%, #009ffd 74%);
   position: fixed;
   top: 0px;
   right: 0px;
@@ -76,4 +79,12 @@ nav a {
 
 .inner-spacer2 {
   height: 50px;
+}
+
+@media (max-width: 500px) {
+  .btn-back {
+      width: 30px;
+      top: -5px;
+      left: -20px;
+  }
 }
