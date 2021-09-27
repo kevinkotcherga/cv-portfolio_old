@@ -691,6 +691,7 @@ input:checked + .slider:before {
 
 figcaption {
   text-align: center;
+  color: #000000;
 }
 
 .bloc-inner-spacer {

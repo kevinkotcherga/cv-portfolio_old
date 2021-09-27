@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Kevin Kotcherga</title>
   <link rel="apple-touch-icon" sizes="180x180" href="../pictures/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../pictures/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../pictures/favicon/favicon-16x16.png">
@@ -24,10 +24,9 @@
       <div class="container-card__portfolio">
           <div class="card__portfolio">
             <div class="content-card__portfolio">
-              <a href="../portfolio-projects/project1-integration-scholarme/index.html">
-                <figure>
-                  <img class="img-integration" src="../pictures/project1-integration-scholarme.png">
-                    <figcaption>ScholarMe</figcaption>
+              <a href="../portfolio-projects/project1-auto-text/index.html">
+                  <img class="img-integration" src="../pictures/project1-auto-text.jpg">
+                    <figcaption>Auto text</figcaption>
                 </figure>
               </a>
             </div>
