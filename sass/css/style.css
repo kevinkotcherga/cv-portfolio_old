@@ -622,7 +622,7 @@ input:checked + .slider:before {
 }
 .container-card__portfolio .card__portfolio {
   position: relative;
-  width: 150px;
+  width: 130px;
   height: 150px;
   margin: 30px;
   box-shadow: var(--box-shadow2);
