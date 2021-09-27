@@ -34,10 +34,10 @@
 
           <div class="card__portfolio">
             <div class="content-card__portfolio">
-              <a href="../portfolio-projects/project2-integration-card/index.html">
+              <a href="../portfolio-projects/project2-popup/index.html">
                 <figure>
-                  <img class="img-integration" src="../pictures/project2-integration-card.png">
-                    <figcaption>Uni</figcaption>
+                  <img class="img-integration" src="../pictures/project2-popup.jpg">
+                    <figcaption>Pop-up</figcaption>
                 </figure>
               </a>
             </div>
