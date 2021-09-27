@@ -200,6 +200,10 @@ section {
     text-decoration: none;
     box-shadow: var(--box-shadow3);
   }
+  a:hover {
+    box-shadow: inset 2px 2px 7px #bababa,
+            inset -2px -2px 2px #ffffff;
+  }
 }
 
 .imgBx img {
@@ -635,6 +639,7 @@ animation: anim 20s ease-in-out infinite;
   align-items: center;
   max-width: 1200px;
   z-index: 1;
+  flex-wrap: wrap;
   .card__portfolio {
     position: relative;
     width: 150px;
@@ -688,18 +693,6 @@ animation: anim 20s ease-in-out infinite;
       }
     }
   }
-}
-
-.img-integration{
-  border: 1px solid rgba(255,255,255,0.25);
-  border-top: 1px solid rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255,255,255,0.5);
-  margin:auto;
-  display:flex;
-  width: 100px;
-  max-width: 100%;
-	height: auto;
-  display: inline-block;  
 }
 
 .img-javascript{

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bitter', serif;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  color: #000000;
+}
+
+.btn-back {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  margin-left: 30px;
+}
+
+.btn-back:hover {
+  cursor: pointer;
+}
+
+.container {
+  box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.5);
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.image {
+  background-image: url('../../pictures/project8-zoom/ralph.jpg');
+  width: 400px;
+  height: 500px;
+  background-size: 100%;
+}
+
+.image:hover {
+  background-size: 175%;
+  cursor: zoom-in;
+}
+
+img {
+  transform-origin: center center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+}
+
+.promo {
+  padding: 1rem;
+  border: #000000 solid 1px;
+  font-size: 0.8rem;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo a {
+  text-decoration: none;
+  color: rgb(65, 0, 131);
+}
+
+strong {
+  font-weight: bolder;
+}
+
+select {
+  border: solid 2px;
+  height: 25px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+span {
+  margin-left: 4px;
+}
+
+.new-price {
+  color: #EB0037;
+  margin-left: 4px;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+button {
+  color: #fefefe;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: #000000;
+  width: 250px;
+  height: 30px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (max-width: 500px) {
+  .btn-back {
+      width: 30px;
+      top: -5px;
+      left: -20px;
+  }
+}

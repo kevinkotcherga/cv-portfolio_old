@@ -180,6 +180,9 @@ section {
   text-decoration: none;
   box-shadow: var(--box-shadow3);
 }
+.content a:hover {
+  box-shadow: inset 2px 2px 7px #bababa, inset -2px -2px 2px #ffffff;
+}
 
 .imgBx img {
   z-index: auto;
@@ -615,6 +618,7 @@ input:checked + .slider:before {
   align-items: center;
   max-width: 1200px;
   z-index: 1;
+  flex-wrap: wrap;
 }
 .container-card__portfolio .card__portfolio {
   position: relative;
@@ -667,18 +671,6 @@ input:checked + .slider:before {
 .container-card__portfolio .card__portfolio .content-card__portfolio a {
   color: var(--text-color);
   text-decoration: none;
-}
-
-.img-integration {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  margin: auto;
-  display: flex;
-  width: 100px;
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
 }
 
 .img-javascript {

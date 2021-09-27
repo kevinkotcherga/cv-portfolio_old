@@ -25,7 +25,7 @@
           <div class="card__portfolio">
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project1-auto-text/index.html">
-                  <img class="img-integration" src="../pictures/project1-auto-text.jpg">
+                  <img class="img-javascript" src="../pictures/project1-auto-text.jpg">
                     <figcaption>Auto text</figcaption>
                 </figure>
               </a>
@@ -36,7 +36,7 @@
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project2-popup/index.html">
                 <figure>
-                  <img class="img-integration" src="../pictures/project2-popup.jpg">
+                  <img class="img-javascript" src="../pictures/project2-popup.jpg">
                     <figcaption>Pop-up</figcaption>
                 </figure>
               </a>
@@ -82,6 +82,17 @@
                 <figure>
                   <img class="img-javascript" src="../pictures/project7-quiz.jpg">
                     <figcaption>Quiz</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="card__portfolio">
+            <div class="content-card__portfolio">
+              <a href="../portfolio-projects/project8-zoom/index.html">
+                <figure>
+                  <img class="img-javascript" src="../pictures/project8-zoom.jpg">
+                    <figcaption>Zoom</figcaption>
                 </figure>
               </a>
             </div>
