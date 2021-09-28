@@ -35,7 +35,7 @@
                 <input class="section-contact__container-formulaire-email" name='email' placeholder="Email" type="email" tabindex="2" required>
               </fieldset>
               <fieldset>
-                <textarea class="section-contact__container-formulaire-message" name='message' placeholder="Php en cours d'apprentisage, envoie de formulaire disponible prochainement." tabindex="3" required></textarea>
+                <textarea class="section-contact__container-formulaire-message" name='message' placeholder="Message" tabindex="3" required></textarea>
               </fieldset>
               <fieldset>
                 <button id="contact-submit" name="submit" type="submit" data-submit="...Sending">Envoyer votre message</button>

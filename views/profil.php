@@ -33,35 +33,35 @@
 
             <div class="card">
               <div class="content-card">
-                <h2></h2>
+                <h2>1</h2>
                 <h3>Qui suis-je ?</h3>
-                <p>Je m'appelle Kevin, j’ai découvert le métier de développeur grâce à des rencontres avec des professionnels qui m’ont permis d’accéder aux bases de ce métier. </br></br> Je me forme en autodidacte avec l'aide d'openclassroom et de nombreux autres tutoriels disponibles sur le web.</br></br> Demandeur de nouveautés et de conseils avisés, je suis extrêmement motivé pour apprendre, je sais être sérieux et autonome pour atteindre mes objectifs.</p>
+                <p>Je m'appelle Kevin, je suis un développeur en formation à l'école Le Wagon. Mes technologies de predilection sont HTML, CSS, JS, Php, Ruby. Si vous voulez en savoir plus sur moi, je vous invite à me contacter !</p>
               </div>
             </div>
 
             <div class="card">
               <div class="content-card">
-                <h2></h2>
+                <h2>2</h2>
                 <h3>Pourquoi le développement web ?</h3>
-                <p>Je suis actuellement en apprentissage et j'aime ce que j'étudie, j'ai pu apercevoir les différents langages qu'il me restait à apprendre et j'ai trouvé ça passionnant.</br></br> Le métier de développeur web et en perpétuelle évolution, le besoin de formation est donc constant et c'est ce qui me plaît, on s'ennuie rarement. J'ai pu être confronté à différents problèmes mais ça a toujours été un plaisir d'en trouver les solutions.</p>
+                <p>Le métier de développeur web et en perpétuelle évolution, le besoin de formation est donc constant et c'est ce qui me plaît, on s'ennuie rarement. J'ai pu être confronté à différents problèmes mais ça a toujours été un plaisir d'en trouver les solutions.</p>
               </div>
             </div>
 
             <div class="card">
               <div class="content-card">
-                <h2></h2>
-                <h3>Informations</h3>
-                <ul>
-                    <li>Permis b</li>
-                    <li>Disponible sur Paris et sa banlieue</li>
-                  </ul>
-                  <h4>Centres d'interets</h4>
+                <h2>3</h2>
+                <h3>Centres d'interets</h3>
                 <ul>
                   <li>Ingénierie du son, mixage et mastering</li>
                   <li>Création musciale assisté par ordinateur (<a href="https://soundcloud.com/kerga">Cliquez-ici</a>)</li>
                   <li>Bourse et crypto-monnaies</li>
                   <li>Sports</li>
                 </ul>
+                <h4>Informations</h4>
+                <ul class="info">
+                    <li>Permis b</li>
+                    <li>Disponible sur Paris et sa banlieue</li>
+                  </ul>
               </div>
             </div>
           </div>
