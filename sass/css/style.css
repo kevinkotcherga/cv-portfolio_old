@@ -144,8 +144,7 @@ section {
   padding: 8px 13px;
   border-radius: 25px;
 }
-.nav__ul a:hover,
-.nav__ul a.active {
+.nav__ul a:hover, .nav__ul .active {
   background: var(--background);
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
 }

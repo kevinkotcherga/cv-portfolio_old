@@ -164,12 +164,12 @@ section {
     padding: 8px 13px;
     border-radius: 25px;
   } 
-  a:hover, 
-  a.active {
-  background: var(--background);
-  box-shadow: 0 4px 7px rgba(0,0,0,0.1);
+  a:hover, .active {
+    background: var(--background);
+    box-shadow: 0 4px 7px rgba(0,0,0,0.1);
 }
 }
+
 
 .content {
   transform: translateX(-100px);
