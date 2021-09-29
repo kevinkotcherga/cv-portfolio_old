@@ -563,6 +563,8 @@ animation: anim 20s ease-in-out infinite;
     .content-card__experience {
       padding: 20px;
       text-align: center;
+      margin-left: auto;
+      margin-right: auto;
       h2 {
         position: absolute;
         top: -80px;
@@ -1057,6 +1059,10 @@ fieldset {
       box-shadow: var(--box-shadow-darkmode);
       background-color: var(--background-color);
     }
+  .nav-bar__logos {
+    width: 70px;
+    fill: #fefefe;
+ }
 }
 
 .nav-bar li {
@@ -1090,7 +1096,7 @@ fieldset {
   }
 
   .container-card .card .content-card p, .container-card .card .content-card li {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .container-card .card .content-card h3, .container-card .card .content-card h4 {
@@ -1156,6 +1162,7 @@ fieldset {
     max-height: 3000px;
   }
   .section-competences {
+    justify-content: normal;
     width: 100%;
     overflow-x: scroll;
     margin: 0 0 200px 0;
