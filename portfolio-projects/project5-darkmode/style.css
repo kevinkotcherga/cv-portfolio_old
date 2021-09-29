@@ -9,9 +9,17 @@ body {
   --link: #000;
   --background-color: #fefefe;
   --text-color: var(--link);
+  --visibility: hidden;
+
   font-family: "Poppins";
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+.dark {
+  --background-color: #000;
+  --link: #fefefe;
+  --visibility: visible;
 }
 
 .btn-back {
@@ -25,19 +33,41 @@ body {
   cursor: pointer;
 }
 
+#toggle-container {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+#moon, #sun {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+#sun {
+  visibility: var(--visibility);
+}
+
+label {
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  width: 50px;
+}
+
+input {
+  visibility: hidden;
+}
+
 .div {
   margin-top: 8%;
-  padding: 50px;
+  padding: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-}
-
-.dark {
-  --background-color: #000;
-  --link: #fefefe;
 }
 
 @media (max-width: 500px) {
@@ -46,5 +76,10 @@ body {
     top: -5px;
     left: -20px;
   }
+
+  .div {
+    padding: 40px;
+  }
+
 }
 
