@@ -34,6 +34,7 @@ body {
   --fill:#385A94;
   --fill2:#E9E1F6;
   --fill-nav-bar:#385A94;
+  --fill-darkmode: #385A94;
   --background-body: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   --text-color: var(--link);
   --background:#fefefe;
@@ -76,6 +77,7 @@ body {
   --fill:#fefefe;
   --fill2:#061624;
   --fill-nav-bar:#091a2c;
+  --fill-darkmode: #fefefe;
   --border: 1px solid #fefefe;
 }
 
@@ -1061,7 +1063,7 @@ fieldset {
     }
   .nav-bar__logos {
     width: 70px;
-    fill: #fefefe;
+    fill: var(--fill-darkmode);
  }
 }
 
