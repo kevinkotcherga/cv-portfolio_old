@@ -98,6 +98,17 @@
             </div>
           </div>
 
+          <div class="card__portfolio">
+            <div class="content-card__portfolio">
+              <a href="../portfolio-projects/project9-marquee-effect/index.html">
+                <figure>
+                  <img class="img-javascript" src="../pictures/project9-mode.jpg">
+                    <figcaption>Site mode</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+
         </div>
 
         <script type="text/javascript" src="../vanilla-tilt.js"></script>
