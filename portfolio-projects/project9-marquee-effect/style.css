@@ -63,7 +63,7 @@ a:focus {
 	color: #000;
 }
 
-.header, .footer{
+.frame {
 	padding: 3rem 5vw;
 	text-align: center;
 	position: relative;
@@ -71,17 +71,17 @@ a:focus {
 	line-height: 1;
 }
 
-.header__title {
+.frame__title {
 	font-size: 1rem;
 	margin: 0 0 1rem;
 	font-weight: 700;
 }
 
-.frame {
+.frame__links {
 	display: inline;
 }
 
-.frame a:not(:last-child),
+.frame__links a:not(:last-child),
 .frame__demos a:not(:last-child) {
 	margin-right: 1rem;
 }
@@ -216,7 +216,7 @@ a:focus {
 }
 
 @media screen and (min-width: 53em) {
-	.header, .footer {
+	.frame {
 		text-align: left;
 		display: grid;
 		align-content: space-between;
@@ -227,16 +227,16 @@ a:focus {
 		grid-template-rows: auto;
 	}
 
-	.header__title-wrap {
+	.frame__title-wrap {
 		display: flex;
 		align-items: start;
 	}
 
-	.header__info {
+	.frame__info {
 		margin: 0;
 	}
 
-	.header__title {
+	.frame__title {
 		margin: 0 1rem 0 0;
 	}
 
