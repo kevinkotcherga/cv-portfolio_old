@@ -196,17 +196,17 @@ section {
 .imgBx img {
   z-index: auto;
   overflow: hidden;
-  max-width: 310px;
+  max-width: 350px;
   margin-right: 150px;
-  animation: anim 15s ease-in-out infinite;
+  animation: anim 8s ease-in-out infinite;
 }
 
 @keyframes anim {
   0%, 100% {
-    transform: translateY(50px);
+    transform: translateY(90px);
   }
   50% {
-    transform: translateY(100px);
+    transform: translateY(110px);
   }
 }
 .nav-bar {
@@ -426,10 +426,10 @@ input:checked + .slider:before {
   left: -70px;
   overflow: hidden;
   max-width: 250px;
-  animation: anim 20s ease-in-out infinite;
+  animation: animprofil 20s ease-in-out infinite;
 }
 
-@keyframes anim {
+@keyframes animprofil {
   0%, 100% {
     transform: translateY(50px);
   }
