@@ -42,7 +42,7 @@ body {
 }
 
 .image {
-  background-image: url('../../pictures/project8-zoom/ralph.jpg');
+  background-image: url('./img/ralph.jpg');
   width: 400px;
   height: 500px;
   background-size: 100%;

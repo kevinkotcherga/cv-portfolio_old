@@ -25,7 +25,7 @@
           <div class="card__portfolio">
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project1-auto-text/index.html">
-                  <img class="img-javascript" src="../pictures/project1-auto-text.jpg">
+                  <img class="img-javascript" src="../pictures/portfolio/project1-auto-text.jpg">
                     <figcaption>Auto text</figcaption>
                 </figure>
               </a>
@@ -36,7 +36,7 @@
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project2-popup/index.html">
                 <figure>
-                  <img class="img-javascript" src="../pictures/project2-popup.jpg">
+                  <img class="img-javascript" src="../pictures/portfolio/project2-popup.jpg">
                     <figcaption>Pop-up</figcaption>
                 </figure>
               </a>
@@ -47,7 +47,7 @@
             <div class="content-card__portfolio">
               <a class="lien-projet-javascript" href="../portfolio-projects/project3-btnmenu/index.html">
                 <figure>
-                  <img class="img-javascript" src="../pictures/project3-btnmenu.jpg">
+                  <img class="img-javascript" src="../pictures/portfolio/project3-btnmenu.jpg">
                     <figcaption>Menu latéral</figcaption>
                 </figure>
               </a>
@@ -58,7 +58,7 @@
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project4-notification/index.html">
                 <figure>
-                  <img class="img-javascript" src="../pictures/project4-notification.jpg">
+                  <img class="img-javascript" src="../pictures/portfolio/project4-notification.jpg">
                     <figcaption>Notifications</figcaption>
                 </figure>
               </a>
@@ -69,7 +69,7 @@
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project5-darkmode/index.html">
                 <figure>
-                  <img class="img-javascript" src="../pictures/project5-darkmode.jpg">
+                  <img class="img-javascript" src="../pictures/portfolio/project5-darkmode.jpg">
                     <figcaption>Dark mode</figcaption>
                 </figure>
               </a>
@@ -80,7 +80,7 @@
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project7-quiz/index.html">
                 <figure>
-                  <img class="img-javascript" src="../pictures/project7-quiz.jpg">
+                  <img class="img-javascript" src="../pictures/portfolio/project7-quiz.jpg">
                     <figcaption>Quiz</figcaption>
                 </figure>
               </a>
@@ -91,7 +91,7 @@
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project8-zoom/index.html">
                 <figure>
-                  <img class="img-javascript" src="../pictures/project8-zoom.jpg">
+                  <img class="img-javascript" src="../pictures/portfolio/project8-zoom.jpg">
                     <figcaption>Zoom</figcaption>
                 </figure>
               </a>
@@ -102,7 +102,7 @@
             <div class="content-card__portfolio">
               <a href="../portfolio-projects/project9-marquee-effect/index.html">
                 <figure>
-                  <img class="img-javascript" src="../pictures/project9-mode.jpg">
+                  <img class="img-javascript" src="../pictures/portfolio/project9-mode.jpg">
                     <figcaption>Site mode</figcaption>
                 </figure>
               </a>
