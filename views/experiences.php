@@ -30,7 +30,6 @@
                 <p><span class="titre">Projet Muscial - Auto-entrepeneur</span> </br> (02/09/18 - 01/06/20)</p>
                 <p><span class="titre">Menuisier Bois - Alternance</span> </br> (01/09/16 - 01/09/18) </p>
                 <p><span class="titre">Réceptionniste d'hôtel / Serveur en restauration</span>  (01/09/14 - 31/08/16)</p>
-            
             </div>
           </div>
 
@@ -44,8 +43,6 @@
               <p><span class="titre">Lycée Louis Feuillade (01/07/14) :</span> Baccalauréat Sciences et technologies du management et de la gestion.</p>
             </div>
           </div>
-
-         
         </div>
 
         <script type="text/javascript" src="../vanilla-tilt.js"></script>
@@ -57,23 +54,25 @@
           "max-glare": 1,
 	        });
         </script>
+        
+        <!-- MOVING IMAGES -->
 
         <div class="imgDoodle5">
-            <img src="../pictures/custom/object7.png">
-          </div>
+          <img src="../pictures/custom/object7.png">
+        </div>
 
-          <div class="imgDoodle6">
-            <img src="../pictures/custom/object6.png">
-          </div>
+        <div class="imgDoodle6">
+          <img src="../pictures/custom/object6.png">
+        </div>
 
-          <div class="imgDoodle7">
-            <img src="../pictures/custom/object6.png">
-          </div>
+        <div class="imgDoodle7">
+          <img src="../pictures/custom/object6.png">
+        </div>
                
-
         <?php include("../php/footer.php"); ?>
 
       </div>
+
     </section>
   </body>
 </html>

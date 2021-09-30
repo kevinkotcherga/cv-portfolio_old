@@ -23,14 +23,6 @@
 
         <div class="container-card">
 
-          <div class="imgDoodle">
-            <img src="../pictures/custom/object.png">
-          </div>
-
-          <div class="imgDoodle2">
-            <img src="../pictures/custom/object2.png">
-          </div>
-
             <div class="card">
               <div class="content-card">
                 <h2>1</h2>
@@ -75,6 +67,16 @@
             "max-glare": 1,
             });
           </script>
+
+          <!-- MOVING IMAGE-->
+
+          <div class="imgDoodle">
+            <img src="../pictures/custom/object.png">
+          </div>
+
+          <div class="imgDoodle2">
+            <img src="../pictures/custom/object2.png">
+          </div>
 
         <?php include("../php/footer.php"); ?>
 

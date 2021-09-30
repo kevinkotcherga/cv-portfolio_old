@@ -72,7 +72,6 @@ body {
   margin: 0 auto;
 }
 
-/* Style containers glassmorphism*/
 section {
   background: var(--background-body);
   display: flex;
@@ -97,7 +96,6 @@ section {
   padding: 50px;
 }
 
-/* Style header*/
 .header {
   position: absolute;
   top: -40px;
@@ -132,7 +130,6 @@ section {
   margin-right: 10px;
 }
 
-/* Style nav */
 .nav__ul {
   margin-left: 50px;
   user-select: none;
@@ -504,14 +501,6 @@ input:checked + .slider:before {
   animation: anim3 20s ease-in-out infinite;
 }
 
-@keyframes anim3 {
-  0%, 100% {
-    transform: translateY(50px);
-  }
-  50% {
-    transform: translateY(70px);
-  }
-}
 .imgDoodle4 img {
   position: absolute;
   top: 270px;
@@ -521,6 +510,14 @@ input:checked + .slider:before {
   animation: anim2 20s ease-in-out infinite;
 }
 
+@keyframes anim3 {
+  0%, 100% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+}
 .container-card__experience {
   padding: 50px;
   margin-left: auto;
@@ -599,6 +596,10 @@ input:checked + .slider:before {
   animation: anim 20s ease-in-out infinite;
 }
 
+.imgDoodle5 {
+  transform: rotate(15deg);
+}
+
 .imgDoodle6 img {
   position: absolute;
   top: -10px;
@@ -625,10 +626,6 @@ input:checked + .slider:before {
     transform: translateY(70px);
   }
 }
-.imgDoodle5 {
-  transform: rotate(15deg);
-}
-
 .container-card__portfolio {
   margin: 300px;
   padding: 50px;
@@ -696,7 +693,7 @@ input:checked + .slider:before {
   text-decoration: none;
 }
 
-.img-javascript {
+.img-portfolio {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -888,45 +885,14 @@ fieldset {
   padding: 0;
 }
 
-.section-logo-contact {
-  padding: 5px;
-  position: relative;
-  display: flex;
-  margin: 0 250px 0 250px;
-  justify-content: space-around;
-  font-family: sans-serif;
-  font-size: 1.8rem;
-}
-.section-logo-contact a {
-  color: #202f44;
-  display: inline-block;
-  position: relative;
-  padding-bottom: 5px;
-}
-.section-logo-contact a:link {
-  text-decoration: none;
-}
-.section-logo-contact a:hover {
-  color: #0045FF;
-}
-
-.image_mail, .image_tel, .maps {
-  height: 30px;
-  width: 30px;
-  margin-right: 10px;
-}
-
 @media (max-width: 1410px) {
   section {
     overflow: hidden;
+    padding: 50px 0px 0px;
   }
 
   body {
     overflow: scroll;
-  }
-
-  section {
-    padding: 50px 0px 0px;
   }
 
   .container-card {
@@ -1003,6 +969,17 @@ fieldset {
     margin-right: 0px;
   }
 
+  .container {
+    max-height: 3000px;
+  }
+
+  .content h2 {
+    font-size: 1.7em;
+  }
+  .content p {
+    font-size: 1.2em;
+  }
+
   .imgBx img {
     margin: 30px 0 60px 0px;
     max-width: 250px;
@@ -1034,17 +1011,6 @@ fieldset {
     right: auto;
   }
 
-  .container {
-    max-height: 3000px;
-  }
-
-  .content h2 {
-    font-size: 1.7em;
-  }
-  .content p {
-    font-size: 1.2em;
-  }
-
   .container-card .card {
     position: relative;
     width: 240px;
@@ -1059,6 +1025,59 @@ fieldset {
 
   .container-card .card .content-card h3, .container-card .card .content-card h4 {
     font-size: 1rem;
+  }
+
+  .container {
+    max-height: 3000px;
+  }
+
+  .section-competences {
+    justify-content: normal;
+    width: 100%;
+    overflow-x: scroll;
+    margin: 0 0 200px 0;
+  }
+  .section-competences .section-competences__logos {
+    margin: 0 20px 0 20px;
+  }
+
+  .container-card__experience {
+    padding: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 200px;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .container-card__experience .card__experience {
+    width: 100%;
+    height: 600px;
+  }
+
+  .container-card__portfolio {
+    flex-direction: column;
+    margin: 0 0 200px 0;
+  }
+
+  .container-card__contact {
+    padding: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 200px;
+    width: 90%;
+  }
+  .container-card__contact .card__contact {
+    position: relative;
+    height: 550px;
+  }
+
+  .container-card__contact .card__contact .content-card__contact h4 {
+    margin: 20px 0 20px 0;
+  }
+
+  .container-card__contact .card__contact .content-card__contact {
+    padding: 10px;
   }
 
   .imgDoodle img {
@@ -1114,59 +1133,6 @@ fieldset {
   .imgDoodle11 img {
     top: -800px;
     right: -500px;
-  }
-
-  .container {
-    max-height: 3000px;
-  }
-
-  .section-competences {
-    justify-content: normal;
-    width: 100%;
-    overflow-x: scroll;
-    margin: 0 0 200px 0;
-  }
-  .section-competences .section-competences__logos {
-    margin: 0 20px 0 20px;
-  }
-
-  .container-card__experience {
-    padding: 0px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 200px;
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .container-card__experience .card__experience {
-    width: 100%;
-    height: 600px;
-  }
-
-  .container-card__portfolio {
-    flex-direction: column;
-    margin: 0 0 200px 0;
-  }
-
-  .container-card__contact {
-    padding: 0px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 200px;
-    width: 90%;
-  }
-  .container-card__contact .card__contact {
-    position: relative;
-    height: 550px;
-  }
-
-  .container-card__contact .card__contact .content-card__contact h4 {
-    margin: 20px 0 20px 0;
-  }
-
-  .container-card__contact .card__contact .content-card__contact {
-    padding: 10px;
   }
 }
 
